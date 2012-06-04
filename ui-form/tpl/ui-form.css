@@ -1,0 +1,391 @@
+/**
+ * @name: ui-form
+ * @author: wkylin(wkylin@qq.com)
+ * @description: 通用表单样式
+ * @require: null
+ */
+
+.ui-form {}
+
+label, label:focus, label:hover, label:active {
+    border: 0 none;
+    outline: medium none;
+}
+
+/** 表单项 */
+.ui-form-item{
+    padding:0 0 20px 170px;
+    margin:0;
+}
+
+.ui-form-item-normal {
+    padding-left:0;
+}
+.ui-form-spliter {
+    display:inline-block;
+    *zoom:1;
+    *display:inline;
+    padding:6px 3px 0;
+}
+
+/** 表单标签 */
+.ui-label {
+    padding:3px 0 6px;
+    padding:5px 0 0\9;
+    *padding:4px 0 0;
+    _padding:3px 0 0;
+    width:170px;
+    float:left;
+    *margin-top:1px;
+    margin-left:-170px;
+    vertical-align:middle;
+    text-align:right;
+    color:#4D4D4D;
+    font-size:14px;
+    position:relative;
+}
+
+/** 表单必填项 */
+.ui-form .required {
+    display:inline-block;
+    *zoom:1;
+    *display:inline;
+    position:relative;
+    top:2px;
+    padding:0 5px 0;
+    color:#f00;
+}
+
+/** 表单输入元素 input, textarea */
+.ui-input, .ui-textarea {
+    border:1px solid #CCC;
+    border-top-color:#a6a6a6;
+    color:#CCC;
+    font:normal 12px tahoma, arial, \5b8b\4f53;
+    padding:7px 4px;
+    padding:7px 4px 5px\9;
+    *padding:8px 4px 5px;
+    _padding:7px 4px 6px;
+    vertical-align:top;
+    width:210px;
+}
+
+.ui-input-len10 {
+    width:14em;
+}
+
+.ui-input-len6 {
+    width:6em;
+}
+
+.ui-input-len4 {
+    width:4em;
+}
+
+.ui-input-len3{
+    width:3em;
+}
+
+.ui-input-hover, .ui-textarea-hover {
+    border-color:#A6A6A6;
+    color:#4D4D4D;
+}
+
+/** 获取焦点样式 */
+.ui-input:focus, .ui-textarea:focus, .ui-input-focus, .ui-textarea-focus {
+    color:#4D4D4D;
+    border-color:#07F;
+    outline:1px solid #8CDDFF;
+    *padding:7px 3px 4px;
+    *border:2px solid #07F;
+}
+/** radio标签样式 */
+.ui-radio, .ui-checkbox {
+    vertical-align:middle;
+    margin-top:2px;
+    margin-top:-2px\0;
+    *margin-top:0px;
+    width:16px;
+    *zoom:1;
+    display:none;
+}
+.ui-radio-label, .ui-checkbox-label {
+    display:inline-block;
+    *zoom:1;
+    *display:inline;
+    position:relative;
+    padding:0 5px 0 1px;
+    top:2px;
+    top:0px\9;
+    *top:1px;
+    _top:0;
+
+}
+.ui-radio-label{
+    padding-left:20px;
+    background:url("../images/radio.png") 0 0 no-repeat transparent;
+}
+
+.ui-checkbox-label{
+    padding-left:20px;
+    background:url("../images/checkbox.png") 0 0 no-repeat transparent;
+}
+.ui-radio-checked{
+    background:url("../images/radio.png") 0 -19px no-repeat transparent;
+}
+
+.ui-checkbox-checked{
+    background:url("../images/checkbox.png") 0 -64px no-repeat transparent;
+}
+.ui-input-amount, .ui-input-banknum {
+    font-size:18px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.ui-textarea {
+    width:650px;
+    overflow:auto;
+    resize:none;/** 针对textarea可以支持resize而设 */
+}
+
+.ui-input-disabled, .ui-textarea-disabled {
+    border-color:#CCC;
+    background-color:#F2F2F2;
+    color:#CCC;
+    cursor:default;
+}
+
+/** select */
+.ui-form-item select {
+    color:#4d4d4d;
+    vertical-align:middle;
+}
+.ui-select {
+    background: #FFFFFF url(../images/select_box_off.gif) no-repeat right center;
+    border: 1px solid #999;
+    cursor: pointer;
+    display: block;
+    height: 23px;
+    width:120px;
+}
+
+.ui-select-hover {
+    background:#FFFFFF url(../images/select_box_on.gif) no-repeat right center;
+}
+
+.ui-select a.ui-selected-value {
+    display:block;
+    margin:1px 1px 2px;
+    padding:1px 20px 2px 4px;
+    white-space:nowrap;
+    color:#000;
+    overflow:hidden;
+}
+.ui-select-options {
+    background:#FFFFFF;
+    border:1px solid #999;
+    margin-left:-1px;
+    list-style:none;
+    overflow-y:auto;
+    z-index:1000;
+    position: absolute;
+    display:none;
+    width:120px;
+}
+.ui-select-options a{
+    color:#000;
+    display:block;
+    height:22px;
+    line-height:22px;
+    padding-left:4px;
+    background:#fff;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.ui-select-options a:hover{
+    background:#bbb
+}
+.ui-select-options a.ui-select-option-selected{
+    background:#bbb
+}
+/* 解决 firefox 点击放大出现虚线框，从而导致滚动条的问题  */
+.ui-select a {
+    outline: none;
+    text-decoration:none;
+}
+.ui-select a:focus {
+    outline: none;
+    text-decoration:none;
+}
+
+/** 表单项提示信息 */
+.ui-form-explain {
+    color:#B2B2B2;
+    padding:3px 0 0;
+    font-size:12px;
+}
+
+/** 报错表单输入框样式 */
+.ui-form-error .ui-input {
+    border-color:#f00;
+    color:#f00;
+}
+
+.ui-form-success .ui-form-explain,
+.ui-form-forbidden .ui-form-explain,
+.ui-form-cue .ui-form-explain,
+.ui-form-warn .ui-form-explain,
+.ui-form-error .ui-form-explain,
+.ui-form-doubt .ui-form-explain, 
+.ui-form-wait .ui-form-explain {
+    background:url("../images/icons.png") no-repeat 0 0;
+    color:#4D4D4D;
+    padding:6px 0 0 19px;
+    line-height:15px;
+    *line-height:13px;
+}
+
+/** 成功提示信息样式 */
+.ui-form-success .ui-form-explain {
+    background-position: -486px -519px;
+}
+
+/** 禁止提示信息样式 */
+.ui-form-forbidden .ui-form-explain {
+    color:#F00;
+    background-position: -458px -544px;
+}
+
+/** 普通信息提示样式 */
+.ui-form-cue .ui-form-explain {
+    background-position: -431px -569px;
+}
+
+/** 警告提示信息样式 */
+.ui-form-warn .ui-form-explain {
+    background-position:-400px -595px;
+}
+
+/** 错误提示信息样式 */
+.ui-form-error .ui-form-explain{
+    color:#f00;
+    background-position: -368px -625px;
+}
+
+/** 疑问提示信息样式 */
+.ui-form-doubt .ui-form-explain{
+    background-position: -338px -652px;
+}
+
+/** 等待提示信息样式 */
+.ui-form-wait .ui-form-explain{
+    background-position: -305px -680px;
+}
+
+
+
+/** 获取焦点提示样式 */
+.ui-form-focus .ui-form-explain, .ui-form-hover .ui-form-explain {
+    color:#4D4D4D;
+}
+
+/** 正在加载项样式 */
+.ui-form-loading {}
+
+/** 正在加载信息提示样式 */
+.ui-loading-text {
+    display:inline-block;
+    zoom:1;
+    width:145px;
+    padding-right:15px;
+    margin-right:-160px;
+    overflow:hidden;
+    color:#20B907;
+    background:url("http://img.alipay.net/pa/frame/v2/ico-loading-text.gif") no-repeat right 80%;
+    visibility:hidden;
+    position:relative;
+    top:-3px;
+}
+
+.ui-form-text, .ui-form-link {
+    display: inline-block;
+    *zoom:1;
+    *display:inline;
+    padding:3px 0 0;
+}
+
+.ui-form-link {
+    margin:1px 0 0 3px;
+    margin-top:3px\9;
+}
+
+.ui-input-del {
+    display:block;
+    width:10px;
+    height:10px;
+    text-indent:-10em;
+    overflow:hidden;
+    margin:4px 0 0 3px;
+    background:url("../images/ui-input-del.png") no-repeat 0 0;
+}
+
+.ui-input-add, .ui-input-add:visited, .ui-input-add:hover {
+    margin:10px 0 0;
+    text-decoration:none;
+    display:block;
+    padding:6px 0 0 31px;
+    width:190px;
+    height:24px;
+    font-weight:700;
+    overflow:hidden;
+    background:url("../images/ui-input-add.png") no-repeat 0 0;
+}
+
+
+/** 水平显示表单 */
+
+.ui-form-horizontal .ui-form-item{
+    width:130px;
+    display:inline;
+    float:left;
+    padding:0 0 15px 70px;
+}
+
+.ui-form-horizontal .ui-form-item select{
+    width:90px;
+}
+.ui-form-horizontal label{
+    width:70px;
+    margin-left:-70px;
+}
+.ui-form-horizontal .ui-input {
+    width:90px;
+}
+
+.ui-form-horizontal .ui-form-item-last{
+    width:60px;
+    padding:0 0 15px 5px;
+}
+.ui-form-horizontal .ui-form-item-time{
+    width:220px;
+}
+
+
+/** 垂直显示表单 */
+
+.ui-form-vertical {}
+
+.ui-form-vertical .ui-form-item {
+    padding-left:20px;
+}
+.ui-form-vertical .ui-label {
+    margin:0;
+    text-align:left;
+    float:none;
+    display:block;
+}
+/** 竖直必填 */
+.ui-form-vertical .required {
+    padding-left:0;
+}

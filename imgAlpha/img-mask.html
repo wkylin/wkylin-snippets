@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link type="text/css" rel="stylesheet" href="base.css"/>
+    <style type="text/css">
+        .img-mask {
+            width: 500px;
+            height: 200px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .img-mask a, .img-mask span {
+            display: block;
+        }
+
+        .img-mask a {
+            z-index: 1;
+        }
+
+        .img-mask a .mask {
+            background: black;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            opacity: 0.2;
+            filter: alpha(opacity = 20);
+        }
+
+        .img-mask-module1 .link1 {
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .img-mask-module1 .link1 span {
+            width: 100px;
+            height: 200px;
+            background: #fc623f;
+        }
+
+        .img-mask-module1 .link2 {
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .img-mask-module1 .link2 span {
+            width: 100px;
+            height: 200px;
+            background: #8ce361;
+        }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $imgMask = $('.img-mask');
+            $imgMask.hover(
+                    function () {
+                        var $a = $(this).children('a');
+                        $a.append('<div class="mask"></div>');
+                        $a.each(function () {
+                            var _w = $(this).children('span').width();
+                            var _h = $(this).children('span').height();
+                            $(this).children('.mask').width(_w).height(_h);
+                        });
+                        $a.mouseover(
+                                function () {
+                                    $(this).children('.mask').css('opacity', '0');
+                                }).mouseout(function () {
+                                    $(this).children('.mask').css('opacity', '0.2');
+                                });
+                    },
+                    function () {
+                        $(this).find('.mask').remove();
+                    }
+            );
+        });
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="img-mask">
+        <a class="link1" href="#">
+            <!-- 使用中用<img />替换<span></span> -->
+            <span></span>
+        </a>
+        <a class="link2" href="#">
+            <span></span>
+        </a>
+        <a class="link3" href="#">
+            <span></span>
+        </a>
+        <a class="link4" href="#">
+            <span></span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

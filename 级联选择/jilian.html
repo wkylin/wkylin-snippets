@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        var data = [
+            {
+                "pseries":"保健产品",
+                "pline":[
+                    {
+                        "line":"医疗IT",
+                        "name":["医疗IT一", "医疗IT二"]
+                    },
+                    {
+                        "line":"移动印刷品",
+                        "name":["移动印刷品一", "移动印刷品二"]
+                    }
+                ]
+            },
+            {
+                "pseries":"笔记本产品",
+                "pline":[
+                    {
+                        "line":"家用电脑",
+                        "name":["家用电脑一", "家用电脑二"]
+                    },
+                    {
+                        "line":"学生机",
+                        "name":["学生机一", "学生机二"]
+                    }
+                ]
+            }
+        ];
+        $(function () {
+            $.each(data, function (i, n) {
+                var $first = "<a href='javascript:void(0)' data='" + i + "'>" + n.pseries + "</a>";
+                $("#first").append($first);
+            })
+            $("#first a").click(function () {
+                $(this).addClass("bgBlue").siblings("a").removeClass("bgBlue");
+                $("#second").html("");
+                var eq = $(this).attr("data");
+                var data1 = data[eq].pline;
+                $.each(data1, function (i, n) {
+                    var $second = "<a href='javascript:void(0)' data='" + i + "'>" + n.line + "</a>";
+                    $("#second").append($second);
+                })
+                $("#second a").click(function () {
+                    $(this).addClass("bgBlue").siblings("a").removeClass("bgBlue");
+                    $("#third").html("");
+                    var eq1 = $(this).attr("data");
+                    var data2 = data1[eq1].name;
+                    $.each(data2, function (i, n) {
+                        var $third = "<a href='javascript:void(0)'>" + n + "</a>";
+                        $("#third").append($third);
+                    })
+                    $("#third a").click(function () {
+                        $(this).addClass("bgBlue").siblings("a").removeClass("bgBlue");
+                    })
+                })
+            })
+        })
+    </script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .col {
+            width: 300px;
+            height: 160px;
+            float: left;
+            display: inline;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+
+        .col dt {
+            height: 28px;
+            line-height: 24px;
+        }
+
+        .col dd {
+            height: 130px;
+            border: 1px solid #66F;
+            overflow-y: scroll;
+        }
+
+        .col a {
+            text-decoration: none;
+            display: block;
+            height: 18px;
+            line-height: 18px;
+            color: #666;
+        }
+
+        .col a:hover {
+            background: #666;
+            color: #FFF;
+        }
+
+        .col a.bgBlue {
+            background-color: #369;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+<dl class="col">
+    <dt>选择产品系列</dt>
+    <dd id="first">
+
+    </dd>
+</dl>
+<dl class="col">
+    <dt>选择产品线</dt>
+    <dd id="second">
+
+    </dd>
+</dl>
+<dl class="col">
+    <dt>选择产品名称</dt>
+    <dd id="third">
+
+    </dd>
+</dl>
+</body>
+</html>

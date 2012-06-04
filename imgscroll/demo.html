@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Xslider Demo</title>
+    <meta name="Keywords" content=" "/>
+    <meta name="Description" content=" "/>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            text-align: center;
+            color: #616161;
+            font: 12px/1.5 arial, \5b8b\4f53;
+        }
+
+        ul, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        :focus {
+            outline: 0;
+        }
+
+        h1 {
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #000;
+            background-color: #eee;
+            width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        a:link, a:visited {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        a.abtn {
+            position: absolute;
+            top: 4px;
+            display: block;
+            height: 132px;
+            width: 6px;
+            overflow: hidden;
+            text-indent: -20000px;
+            background: url(images/arrow3.gif) 0px center no-repeat;
+        }
+
+        a.aleft {
+            left: 7px;
+        }
+
+        a.agrayleft {
+            cursor: default;
+            background-position: -12px center;
+        }
+
+        a.aright {
+            right: 7px;
+            background-position: -6px center;
+        }
+
+        a.agrayright {
+            cursor: default;
+            background-position: -18px center;
+        }
+
+        .productshow {
+            width: 540px;
+            height: 132px;
+            padding: 4px 0;
+            margin: 20px auto;
+            position: relative;
+            text-align: center;
+            font-family: 微 软 雅 黑, 黑 体;
+            background: url(images/productshow.png) no-repeat;
+        }
+
+        .productshow .scrollcontainer {
+            width: 486px;
+            height: 130px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .productshow .scrollcontainer ul {
+            width: 20000px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .productshow .scrollcontainer li {
+            float: left;
+            width: 162px;
+            height: 130px;
+            text-align: center;
+        }
+
+        .productshow .scrollcontainer li.last {
+            background: none;
+        }
+
+        .productshow .scrollcontainer li div {
+            height: 95px;
+            width: 162px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .productshow .scrollcontainer a:hover img {
+            filter: alpha(opacity = 86);
+            -moz-opacity: 0.86;
+            opacity: 0.86;
+        }
+
+        .productshow .scrollcontainer li p {
+            margin: 0;
+            line-height: 32px;
+        }
+
+        .vscroll {
+            width: 540px;
+            height: 120px;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+            text-align: left;
+            line-height: 20px;
+        }
+
+        .vscroll .vscrollobj {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .vscroll a.abtn {
+            background-color: #f1f1f1;
+            border: 1px solid #666;
+            height: 110px;
+        }
+
+        .videolistwraper {
+            width: 206px;
+            height: 243px;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .videolist {
+            text-align: center;
+            width: 106px;
+            height: 200px;
+            overflow: hidden;
+            margin: 25px auto 25px;
+            position: relative;
+        }
+
+        .videolist ul {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .videolist li {
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .videolist .img {
+            position: relative;
+            width: 106px;
+            height: 53px;
+            cursor: pointer;
+        }
+
+        .videolist .img img {
+            width: 100px;
+            height: 47px;
+            border: 3px solid #fff;
+        }
+
+        .videolist .img a {
+            display: block;
+            width: 106px;
+            height: 53px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            filter: alpha(opacity = 80);
+            -moz-opacity: 0.8;
+            opacity: 0.8;
+        }
+
+        .videolist .img a:hover {
+            display: block;
+            filter: alpha(opacity = 100);
+            -moz-opacity: 1;
+            opacity: 1;
+        }
+
+        .videolist .img a.now {
+            background: none;
+        }
+
+        .videolist p {
+            margin-bottom: 0;
+            font-family: 微 软 雅 黑;
+        }
+
+        .newslistwraper {
+            width: 540px;
+            margin: 0 auto 150px;
+            position: relative;
+        }
+
+        .newslistwraper a.abtn {
+            height: 20px;
+            top: 0;
+        }
+
+        .newslist {
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .newslist ul {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 540px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Xslider Demo</h1>
+
+<h2>一、左右切换：每次移动固定距离</h2>
+
+<div class="productshow">
+    <div class="scrollcontainer">
+        <ul>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">1.家电彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">2.幻彩变色彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">3.环保彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">4.家电彩涂钢板</a></p>
+            </li>
+        </ul>
+    </div>
+    <a class="abtn aleft" href="#left">左移</a>
+    <a class="abtn aright" href="#right">右移</a>
+</div>
+
+<h2>二、左右切换：最后一个显示在最右侧</h2>
+
+<div class="productshow">
+    <div class="scrollcontainer">
+        <ul>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">1.家电彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">2.幻彩变色彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">3.环保彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">4.家电彩涂钢板</a></p>
+            </li>
+        </ul>
+    </div>
+    <a class="abtn aleft" href="#left">左移</a>
+    <a class="abtn aright" href="#right">右移</a>
+</div>
+
+<h2>三、自动切换</h2>
+
+<div class="productshow">
+    <div class="scrollcontainer">
+        <ul>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">1.家电彩涂钢板 first</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">2.幻彩变色彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">3.环保彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro1.jpg" alt=""/></a></div>
+                <p><a href="">4.家电彩涂钢板</a></p>
+            </li>
+        </ul>
+    </div>
+    <a class="abtn aleft" href="#left">左移</a>
+    <a class="abtn aright" href="#right">右移</a>
+</div>
+
+<h2>四、循环切换</h2>
+
+<div class="productshow">
+    <div class="scrollcontainer">
+        <ul>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">1.家电彩涂钢板 first</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">2.幻彩变色彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">3.幻彩变色彩涂钢板</a></p>
+            </li>
+            <li>
+                <div><a href="###"><img src="images/temp_pro2.jpg" alt=""/></a></div>
+                <p><a href="">4.幻彩变色彩涂钢板</a></p>
+            </li>
+        </ul>
+    </div>
+    <a class="abtn aleft" href="#left">左移</a>
+    <a class="abtn aright" href="#right">右移</a>
+</div>
+
+<h2>五、文本的上下滚动</h2>
+
+<div class="vscroll">
+    <div class="vscrollobj">
+        <p>当企业家们在默默无闻的为社会提供公共产品的时候，慈善组织却做不了什么。仔细想一想，你能找到哪怕就一个慈善的成就，能够像手机或者避孕药那样革新性的发明？
+            相反地，慈善史上却充斥着失败的例子，比如慈善的努力反而让收益人的状况更糟糕等。盖兹基金会自己承认，它最主要的目标之一，
+            一项历时10年、耗资20亿的全国高中重组计划彻底失败，而该计划原本打算把每个高中的学生数控制在400人以内。失败的慈善事业比比皆是，但就肯承认自己的失败而言，该基金会却很突出。</p>
+
+        <p>
+            我的观点很简单。对于某人的资源是使用在慈善事业还是其他的事业，没有任何固定的标准去判断那种更好或更高尚。如果真的有，那就是，只有市场才能更好的分配资源给那些最有价值的地方，并去惩罚失败者。任何时候，关门的公司都不少见。可到底有多少慈善协会因为经营不善而倒闭呢？"</p>
+
+        <p>当企业家们在默默无闻的为社会提供公共产品的时候，慈善组织却做不了什么。仔细想一想，你能找到哪怕就一个慈善的成就，能够像手机或者避孕药那样革新性的发明？
+            相反地，慈善史上却充斥着失败的例子，比如慈善的努力反而让收益人的状况更糟糕等。盖兹基金会自己承认，它最主要的目标之一，
+            一项历时10年、耗资20亿的全国高中重组计划彻底失败，而该计划原本打算把每个高中的学生数控制在400人以内。失败的慈善事业比比皆是，但就肯承认自己的失败而言，该基金会却很突出。</p>
+
+        <p>
+            我的观点很简单。对于某人的资源是使用在慈善事业还是其他的事业，没有任何固定的标准去判断那种更好或更高尚。如果真的有，那就是，只有市场才能更好的分配资源给那些最有价值的地方，并去惩罚失败者。任何时候，关门的公司都不少见。可到底有多少慈善协会因为经营不善而倒闭呢？"</p>
+    </div>
+    <a class="abtn aleft" href="#left">左移</a>
+    <a class="abtn aright" href="#right">右移</a>
+</div>
+
+<h2>六、上下切换</h2>
+
+<div class="videolistwraper">
+    <div class="videolist">
+        <ul>
+            <li>
+                <div class="img">
+                    <img src="images/video2.jpg" alt=""/>
+                    <a href="###" rel="1">&nbsp;</a>
+                </div>
+                <p>1</p>
+                <a href="flv/mirror_30s.flv" target="_blank"><img src="images/download_ico.jpg" alt=""/></a>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="images/video1.jpg" alt=""/>
+                    <a href="###" rel="2">&nbsp;</a>
+                </div>
+                <p>2</p>
+                <a href="flv/mirror_15s.flv"><img src="images/download_ico.jpg" alt=""/></a>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="images/video3.jpg" alt=""/>
+                    <a href="###" rel="3">&nbsp;</a>
+                </div>
+                <p>3</p>
+                <a href="flv/feature.flv" target="_blank"><img src="images/download_ico.jpg" alt=""/></a>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="images/video4.jpg" alt=""/>
+                    <a href="###" rel="4">&nbsp;</a>
+                </div>
+                <p>4</p>
+                <a href="flv/z2000_30.flv" target="_blank"><img src="images/download_ico.jpg" alt=""/></a>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="images/video5.jpg" alt=""/>
+                    <a href="###" rel="5">&nbsp;</a>
+                </div>
+                <p>5</p>
+                <a href="flv/z2000_15.flv" target="_blank"><img src="images/download_ico.jpg" alt=""/></a>
+            </li>
+    </div>
+    <a class="abtn aleft" href="#up">上移</a>
+    <a class="abtn aright" href="#down">下移</a>
+</div>
+
+<h2>七、上下自动循环切换</h2>
+
+<div class="newslistwraper">
+    <div class="newslist">
+        <ul>
+            <li>日本通过防卫大纲 明确提出加强钓鱼岛等防卫</li>
+            <li>温家宝：彻底解决中印边界问题需耐心和时间</li>
+            <li>菲律宾称不会对人质事件中香港遇难者作出赔偿</li>
+            <li>11月份全国楼市再度量价齐涨 可能引发第三轮调控</li>
+            <li>山西巡警队长成黑老大敛财数亿 27套房被查封</li>
+        </ul>
+    </div>
+    <a class="abtn aleft" href="#up">上移</a>
+    <a class="abtn aright" href="#down">下移</a>
+</div>
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/Xslider.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //一、左右切换：每次移动固定距离;
+        $(".productshow:eq(0)").Xslider({
+            unitdisplayed:3,
+            numtoMove:3,
+            scrollobjSize:Math.ceil($(".productshow:eq(0)").find("li").length / 3) * 486
+        });
+
+        //二、左右切换：最后一个显示在最右侧;
+        $(".productshow:eq(1)").Xslider({
+            unitdisplayed:3,
+            numtoMove:3
+        });
+
+        //三、自动切换;
+        $(".productshow:eq(2)").Xslider({
+            unitdisplayed:3,
+            numtoMove:3,
+            autoscroll:2000  //自动移动间隔时间     默认null不自动移动;
+        });
+
+        //四、循环切换;
+        $(".productshow:eq(3)").Xslider({
+            unitdisplayed:3,
+            numtoMove:2,
+            loop:"cycle"
+        });
+
+        //五、文本的上下滚动;
+        $(".vscroll").Xslider({//.productshow是要移动对象的外框;
+            unitdisplayed:6, //可视的单位个数   必需项;
+            numtoMove:3, //要移动的单位个数    必需项;
+            viewedSize:120, //可视宽度或高度    默认查找要移动对象外层的宽或高度;
+            scrollobj:".vscrollobj", //要移动的对象     默认查找productshow下的ul;
+            unitlen:20, //移动的单位宽或高度     默认查找li的尺寸;
+            scrollobjSize:$(".vscrollobj").height(), //移动最长宽或高（要移动对象的宽度或高度）   默认由li个数乘以unitlen所得的积;
+            dir:"V"//水平移动还是垂直移动，默认H为水平移动，传入V则表示垂直移动;
+        });
+
+        //六、上下切换;
+        $(".videolistwraper").Xslider({//.productshow是要移动对象的外框;
+            unitdisplayed:2, //可视的单位个数   必需项;
+            numtoMove:1, //要移动的单位个数    必需项;
+            //loop:"cycle",
+            dir:"V"//水平移动还是垂直移动，默认H为水平移动，传入V则表示垂直移动;
+        });
+
+        //七、上下自动循环切换;
+        $(".newslistwraper").Xslider({
+            unitdisplayed:1,
+            numtoMove:1,
+            loop:"cycle",
+            dir:"V",
+            autoscroll:2500,
+            speed:300
+        });
+
+
+        $("a").focus(function () {
+            this.blur();
+        });
+    })
+</script>
+</body>
+</html>

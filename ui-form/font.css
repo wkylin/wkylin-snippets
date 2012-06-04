@@ -1,0 +1,40 @@
+/** 统一字体及字体颜色样式
+ @name font
+ @example
+    <span class="ft-orange">200.00</span>
+*/
+html body .ft-left {
+    text-align:left;
+}
+html body .ft-center {
+    text-align:center;
+}
+html body .ft-right {
+    text-align:right;
+}
+html body .ft-orange, html body .ft-green {
+    font:700 12px tahoma,verdana,arial;
+}
+html body .ft-bold {
+    font-weight:700;
+}
+html body .ft-normal {
+    font-weight:normal;
+}
+html body .ft-orange {
+    color:#f37800;
+}
+html body .ft-green {
+    color:#53a000;
+}
+html body .ft-14 {
+    font-size:14px;
+}
+
+html body .ft-middle {
+    vertical-align:middle;
+}
+
+html body .ft-bar {
+    padding: 0 7px 0 6px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="GBK"/>
+    <title>jQuery选择器的上下文参数</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="base.css" media="all">
+    <style type="text/css">
+        .ui-list {
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            margin: 30px auto;
+            border: 1px solid #eee;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="ui-list">
+    <div class="ui-list">
+        <ul>
+            <li>jQuery选择器的上下文参数</li>
+            <li>http://api.jquery.com/jQuery/</li>
+            <li>1111</li>
+        </ul>
+    </div>
+</div>
+<div class="ui-list">
+    <ul>
+        <li>1111</li>
+        <li>1111</li>
+        <li>1111</li>
+    </ul>
+</div>
+<script type="text/javascript" src="jquery-1.7.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".ui-list","#ui-list").css({"background-color":"#eee", "border-color":"red", "color":"#333"})
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>水平垂直居中</title>
+    <link rel="stylesheet" type="text/css" href="base.css" media="all">
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .ui-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .ui-content {
+            width: 550px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -275px;
+            margin-top: -210px;
+            border: 1px dashed #333;
+            background: #eee;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="ui-container">
+    <div class="ui-content">
+        <h3>负边距+定位：水平垂直居中（Negative Margin）</h3>
+
+        <p>&nbsp;</p>
+
+        <p style="line-height:20px;">
+            使用绝对定位将content的定点定位到body的中心，然后使用负margin（content宽高的一半），将content的中心拉回到body的中心，已到达水平垂直居中的效果。
+        </p>
+        <pre>
+            .ui-content {
+                position:absolute;
+                left:50%;
+                top:50%;
+                width:550px;
+                height:350px;
+                margin-top:-190px;
+                margin-left:-275px;
+                padding:15px;
+                border:1px dashed #333;
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                border-radius:5px;
+                background-color:#eee;
+            }
+        </pre>
+    </div>
+</div>
+</body>
+</html>

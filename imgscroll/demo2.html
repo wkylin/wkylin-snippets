@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Xslider Demo</title>
+    <meta name="Keywords" content=" "/>
+    <meta name="Description" content=" "/>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            text-align: center;
+            color: #616161;
+            font: 12px/1.5 arial, \5b8b\4f53;
+        }
+
+        ul, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        :focus {
+            outline: 0;
+        }
+
+        h1 {
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #000;
+            background-color: #eee;
+            width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        a:link, a:visited {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        a.abtn {
+            position: absolute;
+            top: 0px;
+            display: block;
+            height: 264px;
+            width: 6px;
+            overflow: hidden;
+            text-indent: -20000px;
+            background: url(images/arrow3.gif) 0px center no-repeat;
+        }
+
+        a.aleft {
+            left: 7px;
+        }
+
+        a.agrayleft {
+            cursor: default;
+            background-position: -12px center;
+        }
+
+        a.aright {
+            right: 7px;
+            background-position: -6px center;
+        }
+
+        a.agrayright {
+            cursor: default;
+            background-position: -18px center;
+        }
+
+        .productshow {
+            width: 745px;
+            height: 264px;
+            position: relative;
+            margin: 80px auto;
+        }
+
+        .productshow .scrollcontainer {
+            width: 650px;
+            height: 264px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .productshow .scrollwraper {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 20000px;
+        }
+
+        .productshow .scrollcontainer ul {
+            width: 650px;
+            height: 264px;
+            float: left;
+        }
+
+        .productshow .scrollcontainer li {
+            float: left;
+            width: 128px;
+            height: 130px;
+            line-height: 130px;
+            text-align: center;
+            background: #eee;
+            border: 1px solid #e1e1e1;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Xslider实现左右切换的分页效果</h1>
+
+<div class="productshow">
+    <div class="scrollcontainer">
+        <div class="scrollwraper">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+            </ul>
+        </div>
+    </div>
+    <a class="abtn aleft" href="#left">左移</a>
+    <a class="abtn aright" href="#right">右移</a>
+</div>
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/Xslider.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //左右切换分页效果的实现；
+        var totalnum = $(".productshow li").length,
+                numperpage = 10,
+                pages = Math.ceil(totalnum / numperpage),
+                temp = $(".scrollwraper ul");
+
+        function app() {
+            temp = $("<ul />").append(temp.find("li:gt(" + (numperpage - 1) + ")")).appendTo($(".scrollwraper"));
+            if (temp.find("li").length > numperpage) {
+                app();
+            }
+        }
+
+        app();
+
+        $(".productshow").Xslider({
+            scrollobj:".scrollwraper",
+            unitdisplayed:1,
+            numtoMove:1,
+            viewedSize:650,
+            unitlen:650,
+            scrollobjSize:650 * pages
+        });
+
+        $("a").focus(function () {
+            this.blur();
+        });
+    })
+</script>
+</body>
+</html>

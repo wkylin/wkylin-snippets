@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/CRselectBox.css" type="text/css"/> 
+</head>
+<body >
+<h1>1，先搭建好结构</h1>
+
+<select name="abc" id="abc">
+	<option value="1">选项一</option>
+	<option value="2">选项二</option>
+	<option value="3">选项三</option>
+	<option value="4">选项四</option>
+	<option value="5">选项五</option>
+	<option value="6">选项六</option>
+</select>
+
+<br/> VS <br/>
+
+<div class="CRselectBox">
+	<input type="hidden" value=""  name="abc" id="abc"/> <!-- hidden 用来代替select的值 -->
+	<input type="hidden" value=""  name="abc_CRtext" id="abc_CRtext"/> <!-- hidden 用来代替select的文本-->
+	<a class="CRselectValue" href="#">选项一</a>
+	<ul class="CRselectBoxOptions">
+		<li class="CRselectBoxItem"><a href="#" class="selected" rel="1">选项一</a></li>
+		<li class="CRselectBoxItem"><a href="#" rel="2">选项二</a></li>
+		<li class="CRselectBoxItem"><a href="#" rel="3">选项三</a></li>
+		<li class="CRselectBoxItem"><a href="#" rel="4">选项四</a></li>
+		<li class="CRselectBoxItem"><a href="#" rel="5">选项五</a></li>
+		<li class="CRselectBoxItem"><a href="#" rel="6">选项六</a></li>
+	</ul>
+</div>
+
+</body>
+</html>
+

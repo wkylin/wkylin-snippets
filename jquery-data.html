@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<head>
+    <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("div").data("greeting", "Hello World");
+            });
+            $("#btn2").click(function () {
+                alert($("div").data("greeting"));
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="btn1">把数据添加到 div 元素</button>
+<br/>
+<button id="btn2">获取已添加到 div 元素的数据</button>
+<div></div>
+</body>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PiSlider-简单的jquery左右循环滚动插件</title>
+    <style type="text/css">
+            /*css reset*/
+        html, body, div, span, h1, h2, h3, h4, p, form, img, b, i, ul, li, ol, label, aside, footer, header, nav, section, figure {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            color: #333;
+        }
+
+        body {
+            line-height: 1;
+            font: 12px/1.5 "Microsoft YaHei", "微软雅黑" !important;
+            background: url(images/bg.png) repeat;
+        }
+
+        a {
+            outline: none;
+        }
+
+            /*content start*/
+        #container {
+            position: absolute;
+            background: url(images/screen.png) no-repeat;
+            width: 776px;
+            height: 600px;
+            top: 50%;
+            margin-top: -300px;
+            left: 50%;
+            margin-left: -388px;
+        }
+
+        #container h1 a {
+            font-size: 30px;
+            position: absolute;
+            top: -60px;
+            width: 100%;
+            text-align: center;
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+            text-decoration: none;
+            color: #333;
+        }
+
+        #scroll {
+            width: 744px;
+            height: 419px;
+            overflow: hidden;
+            position: absolute;
+            left: 17px;
+            top: 14px;
+        }
+
+            /* prev and next btn style */
+        .btn {
+            position: absolute;
+            top: 170px;
+            width: 83px;
+            height: 141px;
+            display: block;
+            overflow: hidden;
+            background: url(images/arrows.png) no-repeat;
+            cursor: pointer;
+            text-indent: -999em;
+        }
+
+        #btn_prev {
+            left: -100px;
+        }
+
+        #btn_next {
+            right: -100px;
+            background-position: right bottom;
+        }
+
+            /* slider bar start*/
+        #slider_bar {
+            width: 100%;
+            height: 22px;
+            position: absolute;
+            bottom: 135px;
+            text-align: center;
+        }
+
+        #slider_bar a {
+            width: 16px;
+            height: 22px;
+            display: inline-block;
+            overflow: hidden;
+            background: url(images/bullets.png) no-repeat;
+            margin: 0px 3px;
+        }
+
+        #slider_bar a.cur, #slider_bar a:hover {
+            background-position: 0px -21px;
+        }
+
+        #scroll .child {
+            width: 744px;
+            height: 419px;
+            position: absolute;
+            top: 0px;
+            left: 744px;
+            z-index: 10;
+            display: block;
+        }
+
+        #scroll .child img {
+            width: 744px;
+            height: 419px;
+        }
+
+        #scroll_wrapper {
+            position: relative;
+            top: 0px;
+        }
+
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.pislider.js"></script>
+    <script>
+        $(function () {
+            $("#scroll").pislider({
+                child:"child",
+                slider_bar:"slider_bar",
+                scrollTime:500,
+                autoScroll:"true",
+                autoTime:7000
+            });
+        })
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+
+    <div id="scroll">
+        <div class="child"><img src="images/img1.jpg"/></div>
+        <div class="child"><img src="images/img2.jpg"/></div>
+        <div class="child"><img src="images/img3.jpg"/></div>
+        <div class="child"><img src="images/img4.jpg"/></div>
+        <div class="child"><img src="images/img5.jpg"/></div>
+    </div>
+    <a href="#" id="btn_prev" class="btn">prev</a>
+    <a href="#" id="btn_next" class="btn">next</a>
+
+    <div id="slider_bar"></div>
+</div>
+</body>
+</html>

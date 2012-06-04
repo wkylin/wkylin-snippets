@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery实现页面滚动时层智能浮动定位_前端开发-武方博</title>
+<style type="text/css"> 
+*{ margin:0; padding:0;}
+body { font:12px/1.8 Arial; color:#666;}
+h1.tit-h1 { font-size:38px; text-align:center; margin:30px 0 15px; color:#f60;}
+.go-back{ text-align:center; border-top:1px dashed #ccc; padding:10px; margin-top:20px; font-size:40px;}
+.wrap{border:1px dashed #ccc; background:#f8f8f8; padding:20px;}
+
+.demo { height:1500px; }
+.float { width:200px; padding:5px 10px; border:1px solid #ffecb0; font-size:12px; background-color:#fffee0; -moz-box-shadow:1px 1px 2px rgba(0,0,0,.2); -webkit-box-shadow:1px 1px 2px rgba(0,0,0,.2); box-shadow:1px 1px 2px rgba(0,0,0,.2); position:absolute; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.float .close-ico{ position:absolute; top:5px; right:5px; display:block; width:16px; height:16px; }
+</style> 
+<script type="text/javascript" src="http://www.wufangbo.com/demo/jquery-1.4.4.min.js"></script>
+
+</head>
+<body>
+
+<h1 class="tit-h1">jQuery实现页面滚动时层智能浮动定位_前端开发-武方博</h1> 
+<div class="wrap">
+<script type="text/javascript">
+
+(function($){
+    $.fn.capacityFixed = function(options) {
+        var opts = $.extend({},$.fn.capacityFixed.deflunt,options);
+        var FixedFun = function(element) {
+            var top = opts.top;
+            var right = ($(window).width()-opts.pageWidth)/2+opts.right;
+            element.css({
+                "right":right,
+                "top":top
+            });
+            $(window).resize(function(){
+                var right = ($(window).width()-opts.pageWidth)/2+opts.right;
+                element.css({
+                    "right":right
+                });
+            });
+            $(window).scroll(function() {
+                var scrolls = $(this).scrollTop();
+                if (scrolls > top) {
+
+                    if (window.XMLHttpRequest) {
+                        element.css({
+                            position: "fixed",
+                            top: 0							
+                        });
+                    } else {
+                        element.css({
+                            top: scrolls
+                        });
+                    }
+                }else {
+                    element.css({
+                        position: "absolute",
+                        top: top
+                    });
+                }
+            });
+            element.find(".close-ico").click(function(event){
+                element.remove();
+                event.preventDefault();
+            })
+        };
+        return $(this).each(function() {
+            FixedFun($(this));
+        });
+    };
+    $.fn.capacityFixed.deflunt={
+		right : 100,//相对于页面宽度的右边定位
+        top:150,
+        pageWidth : 960
+	};
+})(jQuery);
+</script>
+
+
+<div class="float" id="float"> 
+    <p>1条新私信，<a href="http://www.wufangbo.com/">查看私信</a></p> 
+    <p>10条新消息，<a href="http://www.wufangbo.com/">查看消息</a></p> 
+    <p>108个新粉丝，<a href="http://www.wufangbo.com/">查看粉丝</a></p> 
+<a href="#" title="关闭" id=""  class="close-ico">关闭</a> 
+</div> 
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<p>哥是来占位的</p>
+<script  type="text/javascript"> 
+$("#float").capacityFixed();
+</script> 
+    
+</div>
+
+
+
+<div class="go-back"><a href="http://www.wufangbo.com/?page_id=738">返回jQuery实例列表</a></div>
+<h4 style="text-align:center;"><a href="http://www.wufangbo.com">郑州前端开发</a> <a href="http://www.wufangbo.com">郑州网页设计</a> <a href="http://www.wufangbo.com">郑州美工</a> <a href="http://www.wufangbo.com">郑州UED</a> <a href="http://www.wufangbo.com">郑州div+css </a> <a href="http://www.wufangbo.com">郑州页面重构 </a><a href="http://www.wufangbo.com">武方博前端开发 </a> <a href="http://www.wufangbo.com">前端开发武方博</a> <a href="http://www.wufangbo.com/sitemap.xml">站点地图</a></h4>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20541395-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body> 
+</html>
