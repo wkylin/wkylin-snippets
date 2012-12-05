@@ -31,10 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-wkylin.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jquery-wkylin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery-PlusEx/jquery-wkylin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="629" selection-end="629" vertical-scroll-proportion="0.54462934">
+            <state line="3" column="27" selection-start="57" selection-end="57" vertical-scroll-proportion="-2.4827585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.scrolltotop.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jquery.scrolltotop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="48" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.28360415">
               <folding />
             </state>
           </provider>
@@ -97,6 +106,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="wkylin-snippets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -315,13 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.scrolltotop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-1.098966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/404.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -336,7 +348,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery-PlusEx/jquery-wkylin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="629" selection-end="629" vertical-scroll-proportion="0.54462934">
+        <state line="3" column="27" selection-start="57" selection-end="57" vertical-scroll-proportion="-2.4827585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.scrolltotop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="48" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.28360415">
           <folding />
         </state>
       </provider>
