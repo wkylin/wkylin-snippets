@@ -1,0 +1,190 @@
+
+function getIFrameDOM(id){return document.getElementById(id).contentDocument || document.frames[id].document;}
+
+
+<style type=”text/css”>
+  
+      p:hover,p.hover { background:#eee; }
+
+</style> 
+
+
+<script type=”text/javascript”>
+
+function $(){ 
+	if(document.all){ // 判断是否IE浏览器
+
+           var obj=document.all;
+
+            for(var i=0;i<obj.length;i++){ 
+
+                  obj[i].onmouseover=function(){  
+
+                        this.className="hover";
+
+                  } ;
+
+                  obj[i].onmouseout=function(){ 
+
+                        this.className="";
+
+                  }
+
+            }  
+
+      } 
+
+} 
+$(); 
+
+
+
+Jquery:
+
+$.browser.msie && parseInt($.browser.version) <= 6
+
+(function(){
+	var isIE=!!window.ActiveXObject;
+	var isIE6=isIE&&!window.XMLHttpRequest;
+	if(isIE){if(isIE6){alert('您正在使用低版本浏览器,为了保证您能有更好的访问效果,我们建议您使用谷歌Chrome浏览器、火狐Firefox浏览器或者IE7以上版本浏览器！');}}
+})();
+
+function correctPNG() {
+    for (var i = 0; i < document.images.length; i++) {
+        var img = document.images[i];
+        var imgName = img.src.toUpperCase();
+        if (imgName.substring(imgName.length - 3, imgName.length) == "PNG") {
+            var imgID = (img.id) ? "id='" + img.id + "' " : "";
+            var imgClass = (img.className) ? "class='" + img.className + "' " : "";
+            var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' ";
+            var imgStyle = "display:inline-block;" + img.style.cssText;
+            if (img.align == "left") {
+                imgStyle = "float:left;" + imgStyle;
+            }
+            if (img.align == "right") {
+                imgStyle = "float:right;" + imgStyle;
+            }
+            if (img.parentElement.href) {
+                imgStyle = "cursor:hand;" + imgStyle;
+            }
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle + ' style="' + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='scale');\"></span>";
+            img.outerHTML = strNewHTML;
+            i = i - 1;
+        }
+    }
+}
+
+
+function alphaBackgrounds(){
+   var rslt = navigator.appVersion.match(/MSIE (d+.d+)/, '');
+   var itsAllGood = (rslt != null && Number(rslt[1]) >= 5.5);
+   for (i=0; i<document.all.length; i++){
+      var bg = document.all[i].currentStyle.backgroundImage;
+      if (bg){
+         if (bg.match(/.png/i) != null){
+            var mypng = bg.substring(5,bg.length-2);
+   //alert(mypng);
+            document.all[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+mypng+"', sizingMethod='crop')";
+            document.all[i].style.backgroundImage = "url('')";
+   //alert(document.all[i].style.filter);
+         }                                              
+      }
+   }
+}
+
+if (navigator.appName == "Microsoft Internet Explorer" && window.attachEvent) {
+    window.attachEvent("onload", correctPNG);
+    window.attachEvent("onload", alphaBackgrounds);
+}
+
+解决ie6下png透明的问题：
+* html div {
+   background: url("../images/ui-close.png") 0 0 no-repeat transparent;
+   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="../images/xpng.png");
+} 
+
+IE6 iframe 横向滚动条问题
+设定iframe 样式，overflow-x: hidden，且将scrolling设为“yes”，
+
+ .hack{
+    color:#fff;
+    background:#000;
+    background:#06f\9;   /* all IE */
+    background:#090\0;   /* IE8-9 */
+    background:#970\0/;  /* IE8 only */
+    *background:#f60;    /* IE6-7 */
+    _background:#f00;    /* IE6 only */
+}
+
+//转成Unicode
+function toUnicode (str) {return escape(str).toLocaleLowerCase().replace(/%u/gi, '\\');}
+console.log(toUnicode ('微软雅黑')); // '\5fae\8f6f\96c5\9ed1' 
+
+
+/* 除IE6浏览器的通用方法 */
+.ie6fixed1{position:fixed;left:0;top:0}
+.ie6fixed2{position:fixed;right:0;top:0}
+.ie6fixed3{position:fixed;left:0;bottom:0}
+.ie6fixed4{position:fixed;right:0;bottom:0}
+/* IE6浏览器的特有方法 */
+/* 修正IE6振动bug */
+* html,* html body{background-image:url(about:blank);background-attachment:fixed}
+* html .ie6fixed1{position:absolute;left:expression(eval(document.documentElement.scrollLeft));top:expression(eval(document.documentElement.scrollTop))}
+* html .ie6fixed2{position:absolute;right:expression(eval(document.documentElement.scrollLeft));top:expression(eval(document.documentElement.scrollTop))}
+* html .ie6fixed3{position:absolute;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}
+* html .ie6fixed4{position:absolute;right:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}
+
+问题：ie6,ie7下设置overflow:auto下滚动条出来了但是滚动条不起任何作用，但在火狐，ie8，ie9，谷歌等浏览器下正常显示。
+解决方案：加一个position:relative;属性
+
+css之透明度
+.transparent{filter:alpha(opacity=50); -khtml-opacity: 0.5; opacity: 0.5; } 
+css之RGBA
+.rgba{
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
+    zoom: 1;
+}
+
+/* 解决固定层在IE6下闪的问题 */
+*html{ background-image:url(about:blank); background-attachment:fixed; }
+
+
+/* ----------------------------------------
+	加入收藏
+	$comefrom : 互联网
+	$example : <a href="javascript:void(0);" target="_self" onClick="javascript:AddFavorite('http://www.webjx.com/','网页教学网')">加入收藏</a>
+--------------------------------- */
+function AddFavorite(sURL, sTitle)
+{
+    try { window.external.addFavorite(sURL, sTitle); }
+    catch (e)
+    {
+        try { window.sidebar.addPanel(sTitle, sURL, ""); }
+        catch (e) {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+
+/* --------------------------------------
+	设为首页
+	$example : <a href="javascript:void(0)" onclick="setHomepage()">设为首页</a>
+-------------------------------- */
+function SetHome(obj,vrl){
+	try{ obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl); }
+	catch(e){
+		if(window.netscape) {
+			try { netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  }  
+			catch (e) { 
+				alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]设置为'true'");
+			}
+		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+		prefs.setCharPref('browser.startup.homepage',vrl);
+		}
+	}
+}
+
+
+

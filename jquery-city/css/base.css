@@ -1,0 +1,155 @@
+/* 全局样式
+------------------------------ */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,table,th,td,fieldset,form,input,textarea,button,hr,blockquote,pre{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;line-height:1em;}
+ul,ol,dl{list-style-type:none;}
+fieldset,img{border:none;}
+table{border-collapse:collapse;table-layout:fixed;empty-cells:show;}
+caption,th{text-align:left;font-weight:normal;}
+address,caption,cite,code,dfn,th{font-style:normal;font-weight:normal;}
+img,input,button,select{vertical-align:middle;}
+input,button,select,textarea{font-family:"\5fae\8f6f\96c5\9ed1";font-size:12px;}
+ins{text-decoration:underline;}
+del{text-decoration:line-through;}
+q:before,q:after{content:"";}
+hr{margin:3px 0;border:none;border-top:1px solid #bbb;border-bottom:1px solid #fff;_display:block;_margin:-5px 0;_font-size:0;_line-height:0;}
+textarea{padding:2px 3px;border:1px solid #555;}
+html{overflow-y:scroll;background-color:#fff;}
+body{min-height:500px;color:#333;font:14px/1.6 Tahoma,"\5fae\8f6f\96c5\9ed1","\5b8b\4f53";-webkit-text-size-adjust:none;}
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* 链接类样式
+------------------------------ */
+
+
+
+/* 填写型表格样式
+------------------------------ */
+.form_add{zoom:1;}
+.form_add:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.form_add dt{float:left;padding:5px 0;clear:left;text-align:right;}
+.form_add dd{float:left;padding:5px 0;*float:none;}
+.form_add .tip{padding:0;color:#777;}
+
+.table_form caption{text-align:left;font-weight:bold;}
+.table_form th{padding:3px 5px;text-align:right;}
+.table_form td{padding:3px 5px;}
+.table_form .tip{color:#777;}
+
+
+
+/* 表单控件样式
+------------------------------ */
+input,select,textarea{vertical-align:baseline;*vertical-align:middle;font-family:Tahoma;font-size:12px;}
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='url']{height:18px;padding:1px 3px;border:1px solid #555;border-radius:2px;background-color:#fff;font-family:Tahoma;font-size:12px;line-height:18px;
+background:-moz-linear-gradient(top, #ddd 0, #fff 5px);
+background:-webkit-linear-gradient(top, #ddd 0,#fff 5px);
+background:-o-linear-gradient(top, #ddd 0,#fff 5px);
+background:-ms-linear-gradient(top, #ddd 0,#fff 5px);
+background:linear-gradient(top, #ddd 0,#fff 5px);}
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='url']:focus{border-color:#145d9a;background-color:#fff;box-shadow:0 0 2px #145d9a;outline:none;outline:1px solid #98c4e8\0}
+input[type='radio'],
+input[type='checkbox']{margin:0 5px 0 0;padding:0;vertical-align:text-bottom;*vertical-align:middle;}
+
+input[size='2']{width:20px;}
+input[size='4']{width:40px;}
+input[size='6']{width:60px;}
+input[size='8']{width:80px;}
+input[size='10']{width:100px;}
+input[size='12']{width:120px;}
+input[size='15']{width:150px;}
+input[size='18']{width:180px;}
+input[size='20']{width:200px;}
+input[size='30']{width:300px;}
+input[size='36']{width:300px;}
+input[size='40']{width:400px;}
+input[size='50']{width:500px;}
+
+textarea{padding:2px 3px;border:1px solid #555;resize:none;border-radius:3px;vertical-align:top;
+background:-moz-linear-gradient(top, #ddd 0, #fff 5px);
+background:-webkit-linear-gradient(top, #ddd 0,#fff 5px);
+background:-o-linear-gradient(top, #ddd 0,#fff 5px);
+background:-ms-linear-gradient(top, #ddd 0,#fff 5px);
+background:linear-gradient(top, #ddd 0,#fff 5px);}
+textarea:focus{border-color:#145d9a;background-color:#fff;box-shadow:0 0 2px #145d9a;outline:none;outline:1px solid #98c4e8\0}
+textarea[cols='4']{width:40px;}
+textarea[cols='6']{width:60px;}
+textarea[cols='8']{width:80px;}
+textarea[cols='10']{width:100px;}
+textarea[cols='12']{width:120px;}
+textarea[cols='15']{width:150px;}
+textarea[cols='18']{width:180px;}
+textarea[cols='20']{width:200px;}
+textarea[cols='30']{width:300px;}
+textarea[cols='36']{width:300px;}
+textarea[cols='40']{width:400px;}
+textarea[cols='50']{width:500px;}
+
+select{height:22px;margin:0;border:1px solid #555;border-radius:2px;background-color:#fff;font-family:Tahoma;font-size:12px;line-height:22px;vertical-align:top;}
+select:focus{border-color:#145d9a;background-color:#fff;box-shadow:0 0 2px #145d9a;outline:none;outline:1px solid #98c4e8\0}
+
+/* 禁用状态 */
+input[disabled='disabled'],
+textarea[disabled='disabled'],
+select[disabled='disabled']{background-color:#f5f5f5;color:#555;}
+
+.tip_val{color:#999;}
+.tip_star{padding:0 5px;color:#e00;}
+
+
+
+
+
+/* 按钮样式
+------------------------------ */
+.awesome,
+.awesome:link,
+.awesome:visited{position:relative;display:inline-block;padding:5px 10px 4px;border:none;border-bottom:1px solid rgba(0,0,0,0.25);border-radius:5px;background:#222 url(../img/alert-overlay.png) repeat-x;box-shadow:0 1px 3px rgba(0,0,0,0.5);color:#fff;text-decoration:none;font:12px/1 "\5b8b\4f53";cursor:pointer;}
+.awesome:hover{background-color:#111;color:#fff;}
+.awesome:active{top:1px;}
+.small.awesome,
+.small.awesome:visited{padding:3px 8px 2px;}
+
+.green.awesome,
+.green.awesome:link,
+.green.awesome:visited{background-color:#91bd09;}
+.green.awesome:hover{background-color:#749a02;}
+.blue.awesome,
+.blue.awesome:link,
+.blue.awesome:visited{background-color:#2daebf;}
+.blue.awesome:hover{background-color:#007d9a;}
+.red.awesome,
+.red.awesome:link,
+.red.awesome:visited{background-color:#e33100;}
+.red.awesome:hover{background-color:#872300;}
+.magenta.awesome,
+.magenta.awesome:link,
+.magenta.awesome:visited{background-color:#a9014b;}
+.magenta.awesome:hover{background-color:#630030;}
+.orange.awesome,
+.orange.awesome:link,
+.orange.awesome:visited{background-color:#ff5c00;}
+.orange.awesome:hover{background-color:#d45500;}
+.gray.awesome,
+.gray.awesome:link,
+.gray.awesome:visited{background-color:#777;}
+.gray.awesome:hover{background-color:#555;}
+
+.awesome[disabled='disabled'],
+.awesome[disabled='disabled']:link,
+.awesome[disabled='disabled']:visited,
+.awesome[disabled='disabled']:hover{background-color:#f5f5f5;color:#999;}
+
+
+
+/* 清理浮动
+------------------------------ */
+.clearfix{zoom:1;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}

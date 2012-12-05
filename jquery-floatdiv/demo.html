@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>绝对定位层解决方案—jQuery插件之floatDiv 2.0演示Demo</title>
+    <style>
+        body {
+            font-family: "microsoft Yahei";
+            color: #333;
+        }
+
+        .h1000 {
+            height: 1000px;
+        }
+
+        #btn1, #btn2 {
+            cursor: pointer;
+            float: left;
+            font-size: 14px;
+            background: #ddd;
+            padding: 6px 12px;
+            border: 1px solid #999;
+            margin-right: 10px;
+            display: inline;
+        }
+
+        #close {
+            text-align: right;
+            cursor: pointer;
+        }
+
+        #floatDiv {
+            display: none;
+            background: #09F;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="jquery.floatDiv-2.0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn1").click(function () {
+                $("#floatDiv").floatDiv({
+                    cover:true,
+                    ifScroll:true,
+                    scrollBar:true,
+                    coverDiv:"cover",
+                    coverColor:"#000",
+                    fade:40,
+                    width:400,
+                    height:300,
+                    space:10,
+                    closeHandler:"close",
+                    dragHandler:".tit",
+                    dragLimit:true,
+                    level:"left",
+                    vertical:"bottom"
+                });
+            });
+            //自定义方法执行过程中关闭
+            $("#btn2").click(function () {
+                $("#floatDiv").floatDiv({onOff:false});
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="btn1">弹出层</div>
+<!-- 插件必须 开始 -->
+<div id="floatDiv" style="position:relative;">
+    <div id="close" style="position:absolute; right:10px; top:0px; font-size:24px; color:#F00;"
+         title="点击或按ESC关闭">&times;</div>
+    <h1 class="tit" style="height:40px; line-height:40px; background:#CCC; font-size:14px; font-weight:normal;">
+        我是一个标题，你可以控制我是否拖拽</h1>
+</div>
+<!-- 插件必须 结束 -->
+<div id="btn2">layer</div>
+<div class="h1000">
+
+</div>
+</body>
+</html>

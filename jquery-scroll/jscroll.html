@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jquery滚动条jscroll美化滚动条,自定义滚动条</title>
+    <meta name="description" content="WinWill-我的个人门户！属于自己的门户网站！www.winwill.com">
+    <meta name="keywords" content="WinWill-我的个人门户|关注|资讯|资料库|文档库|作品库|图片|视界">
+    <style>
+        body {
+            padding: 10px 0 0px 0;
+            margin: 0;
+            font-size: 12px;
+            color: #666666;
+            line-height: 20px;
+        }
+
+        p.text {
+            padding: 10px;
+            margin: 10px;
+            background: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+
+        .fontRed {
+            color: #FF0000
+        }
+
+        .title {
+            font-family: Verdana, Arial;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 0 20px
+        }
+
+        .demo {
+            width: 500px;
+            margin: 30px;
+            font-size: 12px;
+            padding: 1px;
+            border: 1px solid #ccc;
+        }
+
+        .demo2 {
+            border: 1px solid #ccc;
+            padding: 1px;
+            background: #fff;
+            width: 700px;
+            margin: 20px;
+        }
+
+        .logo h1, .footer h1 {
+            height: 1px;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            line-height: 20px;
+            font-size: 12px;
+            display: block
+        }
+
+        .footer {
+            border-top: 1px dotted #ccc;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            background: #efefef
+        }
+
+        .footer .copyRight {
+            padding: 20px;
+            font-size: 11px;
+        }
+
+        .footer .copyRight p a {
+            text-decoration: none;
+        }
+
+        pre.text {
+            padding: 10px;
+            margin: 10px;
+            background: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+
+        .img {
+            border: 1px solid #efefef;
+            padding: 1px;
+            background: #fff;
+            width: 99px;
+            margin: 0 0 0 20px
+        }
+
+        #tt, #cc, #ee {
+            background: #f5f5f5;
+            height: 100px;
+        }
+
+        .download {
+            font-size: 18px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            padding: 20px
+        }
+    </style>
+    <script language="javascript" src="imgs/jquery-1.8.3.min.js"></script>
+    <script language="javascript" src="imgs/jscroll.js"></script>
+    <script type="text/javascript">
+        /*--------------------------------------------------------------------------------------------------*/
+        $(document).ready(function () {
+            $("#tt").jscroll();
+            $("#cc").jscroll({W:"12px"});
+            $("#ee").jscroll({W:"12px", Btn:{btn:false}});
+
+            /*---------------------------------------------------------以下为自定义滚动条样式，设置时注意逗号--------------*/
+            $(".dd").jscroll({ W:"15px"//设置滚动条宽度, BgUrl:"url(imgs/s_bg.gif)"//设置滚动条背景图片地址, Bg:"right 0 repeat-y"//设置滚动条背景图片position,颜色等, Bar:{Pos:"bottom"//设置滚动条初始化位置在底部, Bd:{Out:"#bcbcbc", Hover:"#ccc"}//设置滚动滚轴边框颜色：鼠标离开(默认)，经过, Bg:{Out:"-45px 0 repeat-y", Hover:"-58px 0 repeat-y", Focus:"-71px 0 repeat-y"}}//设置滚动条滚轴背景：鼠标离开(默认)，经过，点击, Btn:{btn:true//是否显示上下按钮 false为不显示, uBg:{Out:"0 0", Hover:"-15px 0", Focus:"-30px 0"}//设置上按钮背景：鼠标离开(默认)，经过，点击, dBg:{Out:"0 -15px", Hover:"-15px -15px", Focus:"-30px -15px"}}//设置下按钮背景：鼠标离开(默认)，经过，点击, Fn:function () {}
+            });
+
+            $(".ff").jscroll({ W:"15px", BgUrl:"url(imgs/s_bg2.gif)", Bg:"right 0 repeat-y", Bar:{Bd:{Out:"#a3c3d5", Hover:"#b7d5e6"}, Bg:{Out:"-45px 0 repeat-y", Hover:"-58px 0 repeat-y", Focus:"-71px 0 repeat-y"}}, Btn:{btn:true, uBg:{Out:"0 0", Hover:"-15px 0", Focus:"-30px 0"}, dBg:{Out:"0 -15px", Hover:"-15px -15px", Focus:"-30px -15px"}}, Fn:function () {
+            }
+            });
+
+            $(".gg").jscroll({ W:"15px", BgUrl:"url(imgs/s_bg3.gif)", Bg:"right 0 repeat-y", Bar:{Bd:{Out:"#bcbcbc", Hover:"#ccc"}, Bg:{Out:"-45px 0 repeat-y", Hover:"-58px 0 repeat-y", Focus:"-71px 0 repeat-y"}}, Btn:{btn:true, uBg:{Out:"0 0", Hover:"-15px 0", Focus:"-30px 0"}, dBg:{Out:"0 -15px", Hover:"-15px -15px", Focus:"-30px -15px"}}, Fn:function () {
+            }
+            });
+
+            $(".hh").jscroll({ W:"15px", BgUrl:"url(imgs/s_bg4.gif)", Bg:"right 0 repeat-y", Bar:{Bd:{Out:"#bcbcbc", Hover:"#ccc"}, Bg:{Out:"-45px 0 repeat-y", Hover:"-58px 0 repeat-y", Focus:"-71px 0 repeat-y"}}, Btn:{btn:true, uBg:{Out:"0 0", Hover:"-15px 0", Focus:"-30px 0"}, dBg:{Out:"0 -15px", Hover:"-15px -15px", Focus:"-30px -15px"}}, Fn:function () {
+            }
+            });
+
+
+            $(".ii").jscroll({ W:"15px", BgUrl:"url(imgs/s_bg5.gif)", Bg:"right 0 repeat-y", Bar:{Bd:{Out:"#064697", Hover:"#064697"}, Bg:{Out:"-45px 0 repeat-y", Hover:"-58px 0 repeat-y", Focus:"-71px 0 repeat-y"}}, Btn:{btn:true, uBg:{Out:"0 0", Hover:"-15px 0", Focus:"-30px 0"}, dBg:{Out:"0 -15px", Hover:"-15px -15px", Focus:"-30px -15px"}}, Fn:function () {
+            }
+            });
+
+        });
+    </script>
+</head>
+<body>
+<p class="text"><b>可以自由的给滚动条定义背景，上下按钮，当然不仅仅是颜色，连图片当背景也可以。</b><span class="fontRed">支持鼠标滚轮，点击滚动条滚轴定位，上下按钮久按加速，兼容firefox,谷歌</span>
+</p>
+
+<p class="text">$("#tt").jscroll();//默认调用 </p>
+
+<p class="title">demo:</p>
+
+<div class="demo">
+    <div style="overflow: hidden; position: relative; padding: 0px;" id="tt">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 15px;">
+            <div style="height:0px;overflow:hidden"></div>
+            <div style="padding:5px;"><b>顶部</b>
+
+                <p>此处id为dd</p>
+
+                <p>www.winwill.com</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+                <b>底部</b></div>
+        </div>
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 15px; background-color: rgb(239, 239, 239); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background-color: rgb(204, 204, 204); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; overflow: hidden; height: 15px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background-color: rgb(255, 255, 255); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(181, 181, 181); top: 15px; width: 13px; height: 14.2908px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background-color: rgb(204, 204, 204); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; overflow: hidden; height: 15px;"></div>
+        </div>
+    </div>
+</div>
+<p class="text">$("#cc").jscroll({W:"12px"});//设置了滚动条宽度</p>
+
+<p class="title">demo:</p>
+
+<div class="demo">
+    <div style="overflow: hidden; position: relative; padding: 0px;" id="cc">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 12px;">
+            <div style="height:0px;overflow:hidden"></div>
+            <div style="padding:5px;"><b>顶部</b>
+
+                <p>此处id为cc</p>
+
+                <p>www.winwill.com</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+                <b>底部</b></div>
+        </div>
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 12px; background-color: rgb(239, 239, 239); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background-color: rgb(204, 204, 204); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; overflow: hidden; height: 12px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background-color: rgb(255, 255, 255); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(181, 181, 181); top: 12px; width: 10px; height: 15.5335px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background-color: rgb(204, 204, 204); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; overflow: hidden; height: 12px;"></div>
+        </div>
+    </div>
+</div>
+<p class="text">$("#ee").jscroll({W:"12px",Btn:{btn:false}});//设置了滚动条宽度,去掉了上下按钮,比有按钮好看多了，当然按钮是为了设置背景用的hoho</p>
+
+<p class="title">demo:</p>
+
+<div class="demo">
+    <div style="overflow: hidden; position: relative; padding: 0px;" id="ee">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 12px;">
+            <div style="height:0px;overflow:hidden"></div>
+            <div style="padding:5px;"><b>顶部</b>
+
+                <p>此处id为ee</p>
+
+                <p>www.winwill.com</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+                <b>底部</b></div>
+        </div>
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 12px; background-color: rgb(239, 239, 239); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background-color: rgb(204, 204, 204); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; overflow: hidden; height: 0px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background-color: rgb(255, 255, 255); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(181, 181, 181); top: 0px; width: 10px; height: 20.5042px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background-color: rgb(204, 204, 204); background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; overflow: hidden; height: 0px;"></div>
+        </div>
+    </div>
+</div>
+<p style="text-align:left; margin-left:10px;">/*-----------------以下为自定义滚动条样式，设置时注意逗号--------------*/</p>
+<pre class="text">  $(".dd").jscroll({ W:"12px"//设置滚动条宽度
+	,BgUrl:""//设置滚动条背景图片地址
+	,Bg:"#ccc"//设置滚动条背景图片position,颜色等
+	,Bar:{  Pos:"bottom"//设置滚动条初始化位置在底部
+			,Bd:{Out:"#000",Hover:"red"}//设置滚动滚轴边框颜色：鼠标离开(默认)，经过
+			,Bg:{Out:"green",Hover:"#fff",Focus:"orange"}}//设置滚动条滚轴背景：鼠标离开(默认)，经过，点击
+	,Btn:{  btn:true//是否显示上下按钮 false为不显示
+			,uBg:{Out:"black",Hover:"#fff",Focus:"orange"}//设置上按钮背景：鼠标离开(默认)，经过，点击
+			,dBg:{Out:"black",Hover:"#fff",Focus:"orange"}}//设置下按钮背景：鼠标离开(默认)，经过，点击
+	,Fn:function(){}//滚动时候触发的方法
+	});
+</pre>
+<p class="title">demo:(滚轴初始化位置：底部)</p>
+
+<div class="img"><img src="imgs/s_bg.gif" alt="所用图片" border="0"></div>
+<div class="demo2">
+    <!--加条线 好看点 哈哈-->
+    <div class="dd" style="height: 200px; overflow: hidden; position: relative; padding: 0px;">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 15px;">
+            <div style="height:0px;overflow:hidden"></div>
+
+            <div style="padding:5px">
+                <!--padding这里设置-->
+                <b>顶部</b>
+
+                <p>此处class为dd</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>测试文字</p>
+
+                <p>此处class为dd</p>
+
+                <p>www.winwill.com</p>
+                <b>底部</b></div>
+        </div>
+        <!--padding会被取消-->
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 15px; background: url('imgs/s_bg.gif') repeat-y scroll right 0pt transparent;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg.gif') repeat scroll 0pt 0pt transparent; overflow: hidden; height: 15px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background: url('imgs/s_bg.gif') repeat-y scroll -45px 0pt transparent; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(188, 188, 188); top: 15px; width: 13px; height: 75.4058px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg.gif') repeat scroll 0pt -15px transparent; overflow: hidden; height: 15px;"></div>
+        </div>
+    </div>
+</div>
+<div class="img"><img src="imgs/s_bg2.gif" alt="所用图片" border="0"></div>
+<div class="demo2">
+    <!--加条线 好看点 哈哈-->
+    <div class="ff" style="height: 200px; overflow: hidden; position: relative; padding: 0px;">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 15px;">
+            <div style="height:0px;overflow:hidden"></div>
+
+            <div style="padding:5px">
+                <!--padding这里设置-->
+      <pre style="padding:0; margin:0; color:#4174a3">&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+ $(".ff").jscroll({
+   W:"15px"
+  ,BgUrl:"url(imgs/s_bg2.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+            </div>
+        </div>
+        <!--padding会被取消-->
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 15px; background: url('imgs/s_bg2.gif') repeat-y scroll right 0pt transparent;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg2.gif') repeat scroll 0pt 0pt transparent; overflow: hidden; height: 15px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background: url('imgs/s_bg2.gif') repeat-y scroll -45px 0pt transparent; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(163, 195, 213); top: 15px; width: 13px; height: 101.912px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg2.gif') repeat scroll 0pt -15px transparent; overflow: hidden; height: 15px;"></div>
+        </div>
+    </div>
+</div>
+<div class="img"><img src="imgs/s_bg3.gif" alt="所用图片" border="0"></div>
+<div class="demo2" style="  background:#fff;">
+    <div class="gg" style="height: 200px; overflow: hidden; position: relative; padding: 0px;">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 15px;">
+            <div style="height:0px;overflow:hidden"></div>
+
+            <div style="padding:5px">
+                <!--padding这里设置-->
+      <pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+ $(".ff").jscroll({
+   W:"15px"
+  ,BgUrl:"url(imgs/s_bg3.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+            </div>
+        </div>
+        <!--padding会被取消-->
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 15px; background: url('imgs/s_bg3.gif') repeat-y scroll right 0pt transparent;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg3.gif') repeat scroll 0pt 0pt transparent; overflow: hidden; height: 15px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background: url('imgs/s_bg3.gif') repeat-y scroll -45px 0pt transparent; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(188, 188, 188); top: 15px; width: 13px; height: 101.912px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg3.gif') repeat scroll 0pt -15px transparent; overflow: hidden; height: 15px;"></div>
+        </div>
+    </div>
+</div>
+<div class="img"><img src="imgs/s_bg4.gif" alt="所用图片" border="0"></div>
+<div class="demo2" style="background:#081622;">
+    <div class="hh" style="height: 200px; overflow: hidden; position: relative; padding: 0px;">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 15px;">
+            <div style="height:0px;overflow:hidden"></div>
+
+            <div style="padding:5px">
+                <!--padding这里设置-->
+      <pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+ $(".hh").jscroll({
+   W:"15px"
+  ,BgUrl:"url(imgs/s_bg4.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+            </div>
+        </div>
+        <!--padding会被取消-->
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 15px; background: url('imgs/s_bg4.gif') repeat-y scroll right 0pt transparent;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg4.gif') repeat scroll 0pt 0pt transparent; overflow: hidden; height: 15px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background: url('imgs/s_bg4.gif') repeat-y scroll -45px 0pt transparent; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(188, 188, 188); top: 15px; width: 13px; height: 101.912px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg4.gif') repeat scroll 0pt -15px transparent; overflow: hidden; height: 15px;"></div>
+        </div>
+    </div>
+</div>
+<div class="img"><img src="imgs/s_bg5.gif" alt="所用图片" border="0"></div>
+<div class="demo2" style="background:#004fb1;">
+    <div class="ii" style="height: 200px; overflow: hidden; position: relative; padding: 0px;">
+        <div class="jscroll-c" style="top: 0px; z-index: 9999; position: relative; padding-right: 15px;">
+            <div style="height:0px;overflow:hidden"></div>
+
+            <div style="padding:5px">
+                <!--padding这里设置-->
+      <pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+ $(".ii").jscroll({
+   W:"15px"
+  ,BgUrl:"url(imgs/s_bg5.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+            </div>
+        </div>
+        <!--padding会被取消-->
+        <div class="jscroll-e" unselectable="on"
+             style="height: 100%; top: 0px; right: 0pt; -moz-user-select: none; position: absolute; overflow: hidden; z-index: 10000; width: 15px; background: url('imgs/s_bg5.gif') repeat-y scroll right 0pt transparent;">
+            <div class="jscroll-u"
+                 style="position: absolute; top: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg5.gif') repeat scroll 0pt 0pt transparent; overflow: hidden; height: 15px;"></div>
+            <div class="jscroll-h" unselectable="on"
+                 style="background: url('imgs/s_bg5.gif') repeat-y scroll -45px 0pt transparent; position: absolute; left: 0pt; -moz-user-select: none; border: 1px solid rgb(6, 70, 151); top: 15px; width: 13px; height: 101.912px;"></div>
+            <div class="jscroll-d"
+                 style="position: absolute; bottom: 0px; width: 100%; left: 0pt; background: url('imgs/s_bg5.gif') repeat scroll 0pt -15px transparent; overflow: hidden; height: 15px;"></div>
+        </div>
+    </div>
+</div>
+<div class="download"><a href="http://www.winwill.com/jquery/jquery.js">下载--&gt;jquery.js</a></div>
+<div class="download"><a href="http://www.winwill.com/jquery/jscroll.js">下载--&gt;jscroll.js(依赖于jquery.js)</a></div>
+
+
+</body>
+</html>

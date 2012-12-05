@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="">
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\CSS3MenuHoverEffect\images\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\imgscroll\images\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jQuery.HCheckbox\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jQuery智能定位\capacityFixed.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jQuery省市区三级联动\CitySelect.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jQuery省市区三级联动\Scripts\jquery-1.3.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jQuery省市区三级联动\Scripts\jquery.provincesCity.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jQuery省市区三级联动\Scripts\provincesdata.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jquery给选择器指定上下文\base.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jquery给选择器指定上下文\context.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\jquery给选择器指定上下文\jquery-1.7.1.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\ui-form\images\buttons\buttons_原始文件.psd" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\ui-form\images\buttons\复件 buttons-png.psd" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\demo.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\img\01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\img\02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\img\03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\img\04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\img\05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\img\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\帮助文件.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\本源码来自酷站代码.URL" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\仿QQ商城焦点图\说明.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\分隔线\base.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\分隔线\divideLine.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\css\base.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\css\html5.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\css\test.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\js\aa.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\js\bb.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\js\html5.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\js\jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\js\test.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\垂直二级导航\nav.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\水平二级导航\Untitled-1.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\水平二级导航\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\水平二级导航\nav_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\demo.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\a01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\a02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\a03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\a04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\b01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\c01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\c02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\c03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\c04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\d01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\d02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\d03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\d04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\img\e01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\帮助文件.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\本源码来自酷站代码.URL" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\淘宝商城焦点图\说明.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\等宽格子堆砌\waterfall.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\等宽格子堆砌\waterfall2.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\等宽格子堆砌\waterfall3.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\wkylin-snippets\wkylin-snippets\级联选择\jilian.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrow/arrow.html" afterPath="$PROJECT_DIR$/arrow/arrow.html" />
-    </list>
+    <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,21 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery.scrolltotop.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jquery.scrolltotop.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="10" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrow.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/arrow/arrow.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="61" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.31013617">
-              <folding />
-            </state>
+      <file leaf-file-name="404.jpg" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/404.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -113,9 +37,8 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
-    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -149,7 +72,7 @@
       <flattenPackages />
       <showMembers />
       <showModules />
-      <showLibraryContents ProjectPane="false" />
+      <showLibraryContents ProjectPane="true" />
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
@@ -157,9 +80,14 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="wkylin-snippets" />
@@ -172,14 +100,117 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.externalResources" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
+    <servers>
+      <server id="057cda00-79c5-4fd9-8478-01b53b49fd21">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="38dc73d8-0ac1-44ac-a7c1-8a85d2b9d444">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="6b33d344-7f3e-4af4-baab-076c1110cd9c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="6ca58642-a3df-4fec-85d3-8b50bfe64852">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="7121bdf5-9a03-4027-b9e8-c985810572d3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="7be6d3d4-bdde-4435-ac0d-c6d108113d65">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="96a7a678-2c19-4de1-b9ac-2d56cfd303e3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="9d5d04f4-ed61-4007-9ec4-32115c558bda">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="a95fe3f2-48f1-4784-98c1-282dd81f7849">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="b0fb3655-b403-4724-a06f-f8c21b489ccf">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="be6c5626-0f59-4d3c-89cf-af88aa33994a">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="d13b49b1-dfcc-4745-a84b-bb65d444cb79">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ddbce836-102e-47bd-82f2-b60419454b2c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="fe3815d3-d5cd-4743-840a-a5ca1e4d3b7b">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -205,7 +236,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982357" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -254,7 +285,10 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -273,18 +307,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jquery.scrolltotop.js">
+    <entry file="file://$PROJECT_DIR$/arrow/arrow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="10" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+        <state line="71" column="22" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.6535552">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arrow/arrow.html">
+    <entry file="file://$PROJECT_DIR$/jquery.scrolltotop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="61" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.31013617">
+        <state line="38" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-1.098966">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

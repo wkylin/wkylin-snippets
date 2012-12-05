@@ -1,0 +1,62 @@
+a{color:#347ebf;}
+
+h1{background:#347ebf;color:#fff;font-size:20px;line-height:50px;text-indent:12px;}
+h1 a:link,
+h1 a:visited{color:#ff3;}
+h1 .source{padding:0 18px;background:url(../img/icon_link.png) no-repeat right 2px;font-size:14px;}
+h2{background:#7a9bbf;color:#fff;font-size:15px;line-height:30px;text-indent:12px;}
+h3{font-size:13px;line-height:30px;}
+
+blockquote{margin:10px 0;padding:5px 8px;border:1px solid #ddd;background:#f3f3f3;color:#999;font-family:Consolas,Monaco,Courier,"Courier New";font-size:12px;}
+pre{margin:10px 0;padding:5px 8px;border:1px solid #ddd;background:#f7f7f0;color:#333;}
+pre code{font-family:Consolas,Monaco,Courier,"Courier New";font-size:12px;}
+pre code ol{list-style:decimal inside;}
+
+
+
+/* 头部
+------------------------------ */
+.header{height:26px;padding:0 22px;border-bottom:1px dashed #245CA6;line-height:26px;}
+.breadcrumb{font-size:12px;font-family:Tahoma,"\5B8B\4F53";}
+.breadcrumb strong{color:#090;font-weight:normal;}
+
+.content{overflow:hidden;position:relative;padding:20px;}
+
+/* 插件简介
+------------------------------ */
+.intro{padding:10px;color:#555;}
+.intro li em{font-family:"\5B8B\4F53";font-style:normal;}
+.source_download{padding:0 0 0 20px;background:url(../img/icon_download.png) no-repeat left center;font-size:14px;}
+
+/* 参数表格
+------------------------------ */
+.manual_table{font-family:Consolas,Monaco,Courier,"Courier New","\5fae\8f6f\96c5\9ed1";font-size:13px;}
+.manual_table caption{padding:0 0 3px 2px;color:#555;}
+.manual_table th,
+.manual_table td{border:1px solid #ddd;padding:3px 5px}
+.manual_table th{background:#eee;color:#555;text-align:center;}
+
+/* 浏览器兼容性表格
+------------------------------ */
+.browsers{}
+.browsers th{padding:5px 5px;border:1px solid #abcce0;background:#dce8ef;}
+.browsers td{padding:3px 5px;border:1px solid #ddd;text-indent:26px;color:#999;}
+.browsers td.yes{background:url(../img/icon_tick.png) no-repeat 10px center;color:#090;}
+.browsers td.no{background:url(../img/icon_cross.png) no-repeat 10px center;color:#900;}
+.browsers td.warn{background:url(../img/icon_exclamation.png) no-repeat 10px center;color:#990;}
+
+.browsers .ie,
+.browsers .chrome,
+.browsers .firefox,
+.browsers .safari,
+.browsers .opera{width:32px;height:32px;margin:0 auto;background-image:url(../img/browsers.png);background-repeat:no-repeat;}
+.browsers .ie{background-position:0 0;}
+.browsers .chrome{background-position:-32px 0;}
+.browsers .firefox{background-position:-64px 0;}
+.browsers .safari{background-position:-96px 0;}
+.browsers .opera{background-position:-128px 0;}
+
+.example{padding:10px;border-bottom:1px solid #ccc;}
+
+
+
