@@ -2,17 +2,17 @@
 function getIFrameDOM(id){return document.getElementById(id).contentDocument || document.frames[id].document;}
 
 
-<style type=¡±text/css¡±>
+<style type=â€text/cssâ€>
   
       p:hover,p.hover { background:#eee; }
 
 </style> 
 
 
-<script type=¡±text/javascript¡±>
+<script type=â€text/javascriptâ€>
 
 function $(){ 
-	if(document.all){ // ÅĞ¶ÏÊÇ·ñIEä¯ÀÀÆ÷
+	if(document.all){ // åˆ¤æ–­æ˜¯å¦IEæµè§ˆå™¨
 
            var obj=document.all;
 
@@ -46,7 +46,8 @@ $.browser.msie && parseInt($.browser.version) <= 6
 (function(){
 	var isIE=!!window.ActiveXObject;
 	var isIE6=isIE&&!window.XMLHttpRequest;
-	if(isIE){if(isIE6){alert('ÄúÕıÔÚÊ¹ÓÃµÍ°æ±¾ä¯ÀÀÆ÷,ÎªÁË±£Ö¤ÄúÄÜÓĞ¸üºÃµÄ·ÃÎÊĞ§¹û,ÎÒÃÇ½¨ÒéÄúÊ¹ÓÃ¹È¸èChromeä¯ÀÀÆ÷¡¢»ğºüFirefoxä¯ÀÀÆ÷»òÕßIE7ÒÔÉÏ°æ±¾ä¯ÀÀÆ÷£¡');}}
+	if(isIE){if(isIE6){alert('æ‚¨æ­£åœ¨ä½¿ç”¨ä½ç‰ˆæœ¬æµè§ˆå™¨,ä¸ºäº†ä¿è¯æ‚¨èƒ½æœ‰æ›´å¥½çš„è®¿é—®æ•ˆæœ,æˆ‘ä»¬å»ºè®®æ‚¨ä½¿ç”¨è°·æ­ŒChromeæµè§ˆå™¨ã€ç«ç‹Firefoxæµè§ˆå™¨æˆ–è€…IE7ä»¥ä¸Šç‰ˆ
+æœ¬æµè§ˆå™¨ï¼');}}
 })();
 
 function correctPNG() {
@@ -67,7 +68,8 @@ function correctPNG() {
             if (img.parentElement.href) {
                 imgStyle = "cursor:hand;" + imgStyle;
             }
-            var strNewHTML = "<span " + imgID + imgClass + imgTitle + ' style="' + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='scale');\"></span>";
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle + ' style="' + "width:" + img.width + "px; height:" + img.height + "px;" + 
+imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='scale');\"></span>";
             img.outerHTML = strNewHTML;
             i = i - 1;
         }
@@ -92,19 +94,21 @@ function alphaBackgrounds(){
    }
 }
 
-if (navigator.appName == "Microsoft Internet Explorer" && window.attachEvent) {
-    window.attachEvent("onload", correctPNG);
-    window.attachEvent("onload", alphaBackgrounds);
+if(isIE){
+	if(isIE6){
+    	window.attachEvent("onload", correctPNG);
+    	window.attachEvent("onload", alphaBackgrounds);
+	}
 }
 
-½â¾öie6ÏÂpngÍ¸Ã÷µÄÎÊÌâ£º
+è§£å†³ie6ä¸‹pngé€æ˜çš„é—®é¢˜ï¼š
 * html div {
    background: url("../images/ui-close.png") 0 0 no-repeat transparent;
    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="../images/xpng.png");
 } 
 
-IE6 iframe ºáÏò¹ö¶¯ÌõÎÊÌâ
-Éè¶¨iframe ÑùÊ½£¬overflow-x: hidden£¬ÇÒ½«scrollingÉèÎª¡°yes¡±£¬
+IE6 iframe æ¨ªå‘æ»šåŠ¨æ¡é—®é¢˜
+è®¾å®šiframe æ ·å¼ï¼Œoverflow-x: hiddenï¼Œä¸”å°†scrollingè®¾ä¸ºâ€œyesâ€ï¼Œ
 
  .hack{
     color:#fff;
@@ -116,44 +120,46 @@ IE6 iframe ºáÏò¹ö¶¯ÌõÎÊÌâ
     _background:#f00;    /* IE6 only */
 }
 
-//×ª³ÉUnicode
+//è½¬æˆUnicode
 function toUnicode (str) {return escape(str).toLocaleLowerCase().replace(/%u/gi, '\\');}
-console.log(toUnicode ('Î¢ÈíÑÅºÚ')); // '\5fae\8f6f\96c5\9ed1' 
+console.log(toUnicode ('å¾®è½¯é›…é»‘')); // '\5fae\8f6f\96c5\9ed1' 
 
 
-/* ³ıIE6ä¯ÀÀÆ÷µÄÍ¨ÓÃ·½·¨ */
+/* é™¤IE6æµè§ˆå™¨çš„é€šç”¨æ–¹æ³• */
 .ie6fixed1{position:fixed;left:0;top:0}
 .ie6fixed2{position:fixed;right:0;top:0}
 .ie6fixed3{position:fixed;left:0;bottom:0}
 .ie6fixed4{position:fixed;right:0;bottom:0}
-/* IE6ä¯ÀÀÆ÷µÄÌØÓĞ·½·¨ */
-/* ĞŞÕıIE6Õñ¶¯bug */
+/* IE6æµè§ˆå™¨çš„ç‰¹æœ‰æ–¹æ³• */
+/* ä¿®æ­£IE6æŒ¯åŠ¨bug */
 * html,* html body{background-image:url(about:blank);background-attachment:fixed}
-* html .ie6fixed1{position:absolute;left:expression(eval(document.documentElement.scrollLeft));top:expression(eval(document.documentElement.scrollTop))}
-* html .ie6fixed2{position:absolute;right:expression(eval(document.documentElement.scrollLeft));top:expression(eval(document.documentElement.scrollTop))}
-* html .ie6fixed3{position:absolute;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}
-* html .ie6fixed4{position:absolute;right:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}
+* html .ie6fixed1{position:absolute;left:expression(eval(document.documentElement.scrollLeft));top:expression(eval
+(document.documentElement.scrollTop))}
+* html .ie6fixed2{position:absolute;right:expression(eval(document.documentElement.scrollLeft));top:expression(eval
+(document.documentElement.scrollTop))}
+* html .ie6fixed3{position:absolute;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-
+this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval
+(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt
+(this.currentStyle.marginBottom,10)||0)))}
+* html .ie6fixed4{position:absolute;right:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-
+this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval
+(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt
+(this.currentStyle.marginBottom,10)||0)))}
 
-ÎÊÌâ£ºie6,ie7ÏÂÉèÖÃoverflow:autoÏÂ¹ö¶¯Ìõ³öÀ´ÁËµ«ÊÇ¹ö¶¯Ìõ²»ÆğÈÎºÎ×÷ÓÃ£¬µ«ÔÚ»ğºü£¬ie8£¬ie9£¬¹È¸èµÈä¯ÀÀÆ÷ÏÂÕı³£ÏÔÊ¾¡£
-½â¾ö·½°¸£º¼ÓÒ»¸öposition:relative;ÊôĞÔ
+é—®é¢˜ï¼šie6,ie7ä¸‹è®¾ç½®overflow:autoä¸‹æ»šåŠ¨æ¡å‡ºæ¥äº†ä½†æ˜¯æ»šåŠ¨æ¡ä¸èµ·ä»»ä½•ä½œç”¨ï¼Œä½†åœ¨ç«ç‹ï¼Œie8ï¼Œie9ï¼Œè°·æ­Œç­‰æµè§ˆå™¨ä¸‹æ­£å¸¸æ˜¾ç¤ºã€‚
+è§£å†³æ–¹æ¡ˆï¼šåŠ ä¸€ä¸ªposition:relative;å±æ€§
 
-cssÖ®Í¸Ã÷¶È
+cssä¹‹é€æ˜åº¦
 .transparent{filter:alpha(opacity=50); -khtml-opacity: 0.5; opacity: 0.5; } 
-cssÖ®RGBA
-.rgba{
-    background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
-    zoom: 1;
-}
 
-/* ½â¾ö¹Ì¶¨²ãÔÚIE6ÏÂÉÁµÄÎÊÌâ */
+/* è§£å†³å›ºå®šå±‚åœ¨IE6ä¸‹é—ªçš„é—®é¢˜ */
 *html{ background-image:url(about:blank); background-attachment:fixed; }
 
 
 /* ----------------------------------------
-	¼ÓÈëÊÕ²Ø
-	$comefrom : »¥ÁªÍø
-	$example : <a href="javascript:void(0);" target="_self" onClick="javascript:AddFavorite('http://www.webjx.com/','ÍøÒ³½ÌÑ§Íø')">¼ÓÈëÊÕ²Ø</a>
+	åŠ å…¥æ”¶è—
+	$comefrom : äº’è”ç½‘
+	$example : <a href="javascript:void(0);" target="_self" onClick="javascript:AddFavorite('http://www.webjx.com/','ç½‘é¡µæ•™å­¦ç½‘')">åŠ å…¥æ”¶è—</a>
 --------------------------------- */
 function AddFavorite(sURL, sTitle)
 {
@@ -162,15 +168,15 @@ function AddFavorite(sURL, sTitle)
     {
         try { window.sidebar.addPanel(sTitle, sURL, ""); }
         catch (e) {
-            alert("¼ÓÈëÊÕ²ØÊ§°Ü£¬ÇëÊ¹ÓÃCtrl+D½øĞĞÌí¼Ó");
+            alert("åŠ å…¥æ”¶è—å¤±è´¥ï¼Œè¯·ä½¿ç”¨Ctrl+Dè¿›è¡Œæ·»åŠ ");
         }
     }
 }
 
 
 /* --------------------------------------
-	ÉèÎªÊ×Ò³
-	$example : <a href="javascript:void(0)" onclick="setHomepage()">ÉèÎªÊ×Ò³</a>
+	è®¾ä¸ºé¦–é¡µ
+	$example : <a href="javascript:void(0)" onclick="setHomepage()">è®¾ä¸ºé¦–é¡µ</a>
 -------------------------------- */
 function SetHome(obj,vrl){
 	try{ obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl); }
@@ -178,13 +184,11 @@ function SetHome(obj,vrl){
 		if(window.netscape) {
 			try { netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  }  
 			catch (e) { 
-				alert("´Ë²Ù×÷±»ä¯ÀÀÆ÷¾Ü¾ø£¡\nÇëÔÚä¯ÀÀÆ÷µØÖ·À¸ÊäÈë¡°about:config¡±²¢»Ø³µ\nÈ»ºó½«[signed.applets.codebase_principal_support]ÉèÖÃÎª'true'");
+				alert("æ­¤æ“ä½œè¢«æµè§ˆå™¨æ‹’ç»ï¼\nè¯·åœ¨æµè§ˆå™¨åœ°å€æ è¾“å…¥â€œabout:configâ€å¹¶å›è½¦\nç„¶åå°†
+[signed.applets.codebase_principal_support]è®¾ç½®ä¸º'true'");
 			}
 		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
 		prefs.setCharPref('browser.startup.homepage',vrl);
 		}
 	}
 }
-
-
-
