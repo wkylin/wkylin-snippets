@@ -192,3 +192,30 @@ function SetHome(obj,vrl){
 		}
 	}
 }
+
+
+窗口垂直水平居中
+---------------------------------------------------------------------------------
+window.onload=window.onresize=function(){
+		var winWidth,winHeight;
+		if (window.innerWidth){
+			winWidth = window.innerWidth;
+		}else if ((document.body) && (document.body.clientWidth)){
+			winWidth = document.body.clientWidth;
+		}
+		if (window.innerHeight){
+			winHeight = window.innerHeight;
+		}else if ((document.body) && (document.body.clientHeight)){
+			winHeight = document.body.clientHeight;
+		}
+		if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth){
+			winHeight = document.documentElement.clientHeight;
+			winWidth = document.documentElement.clientWidth;
+		}
+		var obj=document.getElementById("J_div");
+
+		var objWidth=obj.clientWidth;
+		var objHeight=obj.clientHeight;
+		obj.style.marginLeft =(winWidth-objWidth)/2 +"px";
+		obj.style.marginTop =(winHeight-objHeight)/2 +"px";
+	} 

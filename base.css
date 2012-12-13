@@ -6,17 +6,53 @@
 */
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
-    color: #666666;
-    background: #fff;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
     _background: url(about:blank);
+    -webkit-tap-highlight-color: transparent;/*==Add vertical scrollbar  Keeps page centered in all browsers regardless of content height==*/
+    height: 100%;/*==在IE下body的百分高度需要在html设置此值==*/
+    font-size: 100%; /*==用来防止IE和Opera浏览器下的Bug==*/
+    overflow-x: hidden;/*==隐藏水平滚动条==*/
+    overflow-y:scroll;/*==保证所有浏览器下都显示垂直滚动条，防止没有滚动条的页面有移动效果==*/
 }
 
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: #fff;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    color: #404040;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', '\5fae\8f6f\96c5\9ed1';
+}
+
+/* 全局连接样式 */
+a {
+    text-decoration: none;
+    color: #29B4F0;
+    outline: none;
+}
+
+a:hover {
+    color: #017CB9;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+a:hover,a:active {
+    outline: none;
 }
 
 /* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
@@ -30,18 +66,121 @@ audio, canvas, video {
     *display: inline;
     *zoom: 1;
 }
-
-/* 要注意表单元素并不继承父级 font 的问题 */
-body, button, input, select, textarea {
-    font: 12px/1.5 tahoma, arial,'Hiragino Sans GB','\5b8b\4f53','\5fae\8f6f\96c5\9ed1';
+/* 防止现代浏览器将没有controls属性的的‘audio’元素显示出来 */
+audio:not([controls]){
+    display: none;
+    height: 0;
 }
 
+input[type="search"]{
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration{
+    -webkit-appearance: none;
+}
+:-moz-placeholder,
+::-webkit-input-placeholder{
+    color: #999;
+}
+/* 校正IE 8/9中‘hidden’属性不起作用的问题 */
+[hidden] {
+    display: none;
+}
+/* Form 表单*/
+fieldset{
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend{
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px;
+}
+button,input,select,textarea{
+    font-size:100%;/* 字号不继承 */
+    font-family:inherit;/* 字体不继承 */
+    margin: 0;
+    outline: 0 none;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+/* 移除 IE 8/9 中默认的垂直滚动条 增强所有浏览器中的对对齐以及可读性 */
+textarea{
+    overflow: auto;
+    vertical-align: top;
+    resize:none;
+}
+/*
+ * 更正 Firefox 4+ 用户代理样式表（UA stylesheet）中在‘input’上
+ * 设置‘line-height’时使用‘!important’的问题
+ */
+button,input{
+    line-height: normal;
+}
+/*
+ * 1. 避免 Android 4.0.* 中的 WebKit bug ，该bug会破坏原生的‘audio 和‘video’控制器
+ * 2. 更正 iOS 中无法设置可点击的‘input’的问题
+ * 3. 增强图片类型以及其他类型的‘input’中指针的可用性以及样式的一致性
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.ui-submit-btn{
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible;
+}
+/*
+ * 重置disabled元素的默认指针样式
+ */
+button[disabled],
+input[disabled],
+.ui-disable{
+    cursor: default;
+}
+/*
+ * 1. 调整 IE 8/9 box sizing 被设置为 ‘content-box’ 的问题
+ * 2. 移除 IE 8/9 中多余的内边距
+ */
+input[type="checkbox"],
+input[type="radio"],
+.ui-form-radio,
+.ui-form-checkbox{
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner{
+    border: 0;
+    padding: 0;
+}
 input, select, textarea {
     font-size: 100%;
-    outline:none;
+    outline: none;
     background-color: #fff;
 }
 
+/* 选择中元素的文本的高亮背景和前景色 只适合现代浏览器，在IE6-8下是没有效果的*/
+::-moz-selection {
+    background: #fe57a1;
+    color: #fff;
+    text-shadow: none;
+}
+::selection{
+    background: #fe57a1;
+    color: #fff;
+    text-shadow: none;
+}
 /* 去掉各Table  cell 的边距并让其边重合 */
 table {
     border-collapse: collapse;
@@ -52,10 +191,18 @@ table {
 th {
     text-align: inherit;
 }
-
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th {
+    text-align: left;
+}
 /* 去除默认边框 */
 fieldset, img {
     border: 0;
+}
+
+img {
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;/*ie6 ie7图片缩放*/
 }
 
 /* ie6 7 8(q) bug 显示为行内表现 ie6出现水平滚动条*/
@@ -79,25 +226,45 @@ address, caption, cite, code, dfn, em, th, var {
     font-style: normal;
     font-weight: 500;
 }
-
-/* 去掉列表前的标识, li 会继承 */
-ol, ul {
-    list-style: none;
+/* 增强所有浏览器中预格式化文本的可读性 */
+pre{
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap !important;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
-
-/* 对齐是排版最重要的因素, 别让什么都居中 */
-caption, th {
-    text-align: left;
-}
-
 /* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     font-weight: 500;
 }
+/* 去掉列表前的标识, li 会继承 */
+ol, ul {
+    list-style: none;
+}
 
+dl,menu,ol,ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+q{
+    quotes: none;
+}
 q:before, q:after {
     content: '';
+    content: none;
 }
 
 /* 统一上标和下标 */
@@ -116,13 +283,35 @@ sub {
     bottom: -0.25em;
 }
 
-/* 让链接在 hover 状态下显示下划线 */
-a:hover {
-    text-decoration: underline;
+small{
+    font-size: 80%;
 }
-
+abbr[title]{
+    border-bottom: 1px dotted;
+}
+b,strong{
+    font-weight: bold;
+}
+blockquote{
+    margin: 1em 40px;
+}
+/* 校正 Safari 5 和 Chrome 中样式不呈现的问题 */
+dfn{
+    font-style: italic;
+}
+/* 校正 IE 8/9 中样式不呈现的问题 */
+mark{
+    background: #ff0;
+    color: #444;
+}
+/* 更正 Safari 5 和 Chrome 中奇怪的字体设置 */
+code,kbd,pre,samp{
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
 /* 默认不显示下划线，保持页面简洁 */
-ins, a {
+ins {
     text-decoration: none;
 }
 
@@ -157,6 +346,41 @@ body .fn-hide {
 .fn-right {
     float: right;
 }
-.ft-bold{
+/* 文案加粗显示*/
+.ft-bold {
     font-weight: bold;
+}
+
+/* 视觉隐藏的文字，兼容屏幕阅读器 */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/* IE9 支持SVG */
+svg:not(:root){overflow:hidden;}
+
+/* 确保图片不会溢出容器设置 */
+@media print {
+    img { max-width: 100% !important; }
+}
+@media print {
+    p, h2, h3 { orphans: 3; widows: 3; }
 }
