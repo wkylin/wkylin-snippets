@@ -102,14 +102,36 @@ if(isIE){
 }
 
 解决ie6下png透明的问题：
+------------------------------------------------------------------------
 * html div {
    background: url("../images/ui-close.png") 0 0 no-repeat transparent;
    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="../images/xpng.png");
 } 
 
+.png24{
+    width: 126px;
+    height: 46px;
+    background-image: url("../static/images/ui-msg-board.png");
+    *background-image: url("../static/images/ui-msg-board.png");
+    /*_background-image:url("../static/images/ui-msg-board-ie6.png");*/
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/images/ui-msg-board.png');  /* IE6 */
+    _background-image: none; /* IE6 */
+}
+优点就是使用简单方便，但是不能作为背景，且只能用作单个png图片的使用.
+如果要作为背景，背景不能平铺，需要新增加一个div层，并设置其position:relative;
+<div class="png24">
+	<div style="position:relative;">
+	CSS 背景PNG透明 及 链接失效问题解决
+	</div>
+</div>
+注意：src中的路径是图片相对html页面的路径，或是指定绝对路径。
+
 IE6 iframe 横向滚动条问题
+--------------------------------------------------------------------------------------
 设定iframe 样式，overflow-x: hidden，且将scrolling设为“yes”，
 
+兼容各浏览器CSS Hack写法：
+-------------------------------------------------------------------------------
  .hack{
     color:#fff;
     background:#000;
@@ -121,11 +143,13 @@ IE6 iframe 横向滚动条问题
 }
 
 //转成Unicode
+---------------------------------------------------------------------------------------
 function toUnicode (str) {return escape(str).toLocaleLowerCase().replace(/%u/gi, '\\');}
 console.log(toUnicode ('微软雅黑')); // '\5fae\8f6f\96c5\9ed1' 
 
 
 /* 除IE6浏览器的通用方法 */
+----------------------------------------------------------------------------------------
 .ie6fixed1{position:fixed;left:0;top:0}
 .ie6fixed2{position:fixed;right:0;top:0}
 .ie6fixed3{position:fixed;left:0;bottom:0}
@@ -150,7 +174,10 @@ this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.
 解决方案：加一个position:relative;属性
 
 css之透明度
+--------------------------------------------------------------------------
 .transparent{filter:alpha(opacity=50); -khtml-opacity: 0.5; opacity: 0.5; } 
+此方法有文案透明的问题.推荐用css3中的RGBA来
+
 
 /* 解决固定层在IE6下闪的问题 */
 *html{ background-image:url(about:blank); background-attachment:fixed; }
@@ -218,4 +245,26 @@ window.onload=window.onresize=function(){
 		var objHeight=obj.clientHeight;
 		obj.style.marginLeft =(winWidth-objWidth)/2 +"px";
 		obj.style.marginTop =(winHeight-objHeight)/2 +"px";
-	} 
+	}
+
+
+创建dom各浏览器之间的兼容问题：
+--------------------------------------------------------------------------------------------------------------
+try {
+        if(isIE6){
+            msgDom = document.createElement("<div id='J_leaMsg' class='ui-button ui-msg-board'></div>");
+            var pngDiv=document.createElement("<div class='fn-posr'></div>");
+            var textNode=document.createTextNode("马上留言");
+            pngDiv.appendChild(textNode);
+            msgDom.appendChild(pngDiv);
+        }else{
+            msgDom = document.createElement("<div id='J_leaMsg' class='ui-button ui-msg-board'></div>");//ie6 7 8
+            msgDom.appendChild(document.createTextNode("马上留言"));
+        }
+    } catch (e) {//other
+        msgDom = document.createElement("div");
+        msgDom.setAttribute("id", "J_leaMsg");
+        msgDom.setAttribute("class", "ui-button ui-msg-board");
+        msgDom.appendChild(document.createTextNode("马上留言"));
+    }
+
