@@ -297,3 +297,77 @@ transform: rotate(90deg);
 .gradient{
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#FFFFFF'); /* IE6–IE9 */ }
 }
+
+
+1.innerText与textContent区别
+ie识别innerText，ie6 ie7 ie8不识别textContent,其他浏览器不识别innerText,识别textContetn.
+
+logMessage:
+--------------------------------------------------------------------------------------------------------------------
+function doClear(){
+	document.getElementById("divProgress").innerHTML = "";
+}
+
+function LogMessage(strMsg){
+	strMsg = (new Date().getSeconds() + ":" + strMsg);
+	document.getElementById("divProgress").innerHTML = (document.getElementById("divProgress").innerHTML + strMsg + "<BR>");
+}
+
+var curStyle = function (element) {
+        return element.currentStyle || document.defaultView.getComputedStyle(element, null);
+}
+
+    var Extend = function (destination, source) {
+        for (var property in source) {
+            destination[property] = source[property];
+        }
+    }
+
+
+    var extend = function(destination, source, override) {
+        if (override === undefined) override = true;
+        for (var property in source) {
+            if (!override && typeof(source[property]) == 'function' && destination.hasOwnProperty(property)) {
+                destination[property] = (function(name, method) {
+                    return function() {
+                        this.base = source[name];
+                        return method.apply(this, arguments);
+                    }
+                })(property, destination[property]);
+            } else {
+                destination[property] = source[property];
+            }
+        }
+
+        return destination;
+    };
+
+    function addEventHandler(oTarget, sEventType, fnHandler) {
+        if (oTarget.addEventListener) {
+            oTarget.addEventListener(sEventType, fnHandler, false);
+        } else if (oTarget.attachEvent) {
+            oTarget.attachEvent("on" + sEventType, fnHandler);
+        } else {
+            oTarget["on" + sEventType] = fnHandler;
+        }
+    };
+
+    function removeEventHandler(oTarget, sEventType, fnHandler) {
+        if (oTarget.removeEventListener) {
+            oTarget.removeEventListener(sEventType, fnHandler, false);
+        } else if (oTarget.detachEvent) {
+            oTarget.detachEvent("on" + sEventType, fnHandler);
+        } else {
+            oTarget["on" + sEventType] = null;
+        }
+    };
+
+W3C 官网超链接交互样式设计与实现
+-----------------------------------------------------------------------------------------
+div { width:300px; margin:20px auto; line-height:24px; }
+div a{ text-decoration:none; color:#000; padding-bottom:1px; }
+div a:link, div a:visited{ border-bottom:2px solid #f00; }
+div a:hover{ border-bottom:2px solid #00f; }
+div a:active{ border-bottom:2px solid #00f; outline:0 none; position:relative; top:1px; }
+
+
