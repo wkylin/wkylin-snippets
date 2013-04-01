@@ -268,3 +268,32 @@ try {
         msgDom.appendChild(document.createTextNode("马上留言"));
     }
 
+
+------------------------------------------------------
+.inline-block{
+display: inline-block;
+*display: inline;
+*zoom: 1;
+}
+
+.inHeight{
+min-height: 200px;
+_height: 200px; / hack for ie6 */
+}
+.rotate90deg{
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+transform: rotate(90deg);
+}
+
+.entry_title{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.gradient{
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#FFFFFF'); /* IE6–IE9 */ }
+}
