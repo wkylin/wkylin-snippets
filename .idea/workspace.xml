@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Easy HTML5 Template.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/print.css" />
+    <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="Drag Box">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="0ad495a1-0f92-4a07-899a-83963fdfe0c7" name="Rejected commit: Default" comment="" />
+    <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DragBox/DragBox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DragBox/css/base.css" />
+    </list>
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1364290568924" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1364894993244" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,46 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base.css">
+      <file leaf-file-name="DragBox.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slider.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/slider 1.1/slider/slider.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jscssSolution.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="362" column="10" selection-start="12614" selection-end="12614" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="print.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/print.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Easy HTML5 Template.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Easy HTML5 Template.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.14328358">
+            <state line="405" column="15" selection-start="12351" selection-end="12351" vertical-scroll-proportion="0.33103448">
               <folding />
             </state>
           </provider>
@@ -149,6 +115,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DragBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -159,12 +139,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
     <servers>
       <server id="af5a6ae6-bfe8-49db-9935-68a366bc12d1">
+        <serverdata />
+      </server>
+      <server id="c8d58702-2ba6-4d0c-9914-441f2e0b131a">
         <serverdata />
       </server>
     </servers>
@@ -215,28 +199,32 @@
       <created>1364285305874</created>
       <updated>1364285305874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="html5 easy template print.css">
+      <created>1364290629899</created>
+      <updated>1364290629899</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5105783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22772278" sideWeight="0.67086834" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22772278" sideWeight="0.48942173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -285,7 +273,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Drag Box" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -300,16 +288,13 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="solution" />
+    <MESSAGE value="html5 easy template print.css" />
+    <MESSAGE value="Drag Box" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ui-form/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="177" selection-end="177" vertical-scroll-proportion="-4.3175774" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IE9.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="2" selection-start="58" selection-end="89" vertical-scroll-proportion="0.108843535" />
@@ -357,42 +342,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui-form/ui-formTest.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.58715594">
-          <folding />
-        </state>
+        <state line="16" column="30" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.58715594" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base.css">
+    <entry file="file://$PROJECT_DIR$/print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/slider 1.1/slider/slider.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+        <state line="106" column="7" selection-start="3610" selection-end="3610" vertical-scroll-proportion="0.49079755">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="10" selection-start="12614" selection-end="12614" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/print.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="362" column="10" selection-start="12614" selection-end="12614" vertical-scroll-proportion="0.49852508">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Easy HTML5 Template.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.14328358">
+        <state line="2" column="54" selection-start="72" selection-end="72" vertical-scroll-proportion="0.030075189">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="833" selection-end="833" vertical-scroll-proportion="0.029498525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="405" column="15" selection-start="12351" selection-end="12351" vertical-scroll-proportion="0.33103448">
           <folding />
         </state>
       </provider>
