@@ -302,6 +302,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndC
 1.innerText与textContent区别
 ie识别innerText，ie6 ie7 ie8不识别textContent,其他浏览器不识别innerText,识别textContetn.
 
+
+textarea中的文字自动换行问题
+--------------------------------------------------------------------------------------------
+在textarea中设置输入内容的自动换行，也是在CSS中设置word-wrap:break-word;属性。需要额外注意的是textarea元素本身有一个warp属性，其取值含义如下：
+l        off：不自动换行；
+l        hard：自动硬回车换行，换行标记一同被传送到服务器端（Opera、Chrome下不传）；
+l        soft：自动软回车换行，换行标记不会传送到服务器端。
+
+
+
 logMessage:
 --------------------------------------------------------------------------------------------------------------------
 function doClear(){

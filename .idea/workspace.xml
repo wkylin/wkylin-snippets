@@ -2,16 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DragBox/js/drag.js" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\base.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\default.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\font.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\function.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\buttons-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\buttons-icon.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\buttons.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\buttons\buttons-png.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\buttons\buttons_old.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\checkbox.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\doubt.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\doubt.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\forbidden.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\forbidden.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\m2_btns.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-cue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-cue.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-doubt.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-doubt.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-error.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-error.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-forbidden.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-forbidden.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-success.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-success.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-wait.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-wait.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-warn.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\notice-warn.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\radio.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\select_box_off.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\select_box_on.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tab.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-cue-arrow.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-cue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-cue.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-doubt.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-doubt.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-error.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-error.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-forbidden.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-forbidden.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-success.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-success.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-wait.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-wait.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-warn-arrow.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-warn.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\tip-warn.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-formTest.htm" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-input-add.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-input-add.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-input-del.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-input-del.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-page.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-page.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-paging.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-paging.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-tab.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-tab.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-table-header.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-table-header.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-table-sort.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-table-sort.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-table-sort.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\ui-tip-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\user-img.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\wait.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\wait.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\warn.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\images\warn.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\js\button.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\js\jquery-1.7.1.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\js\jquery-ui-form.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\js\jquery-ui-tab.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\js\tab.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\tpl\ui-button.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\tpl\ui-form.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\wkylin-snippets\ui-form\ui-formTest.htm" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DragBox/DragBox.html" afterPath="$PROJECT_DIR$/DragBox/DragBox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jscssSolution.txt" afterPath="$PROJECT_DIR$/jscssSolution.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="0ad495a1-0f92-4a07-899a-83963fdfe0c7" name="Rejected commit: Default" comment="" />
-    <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DragBox/DragBox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DragBox/css/base.css" />
-    </list>
+    <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1364895063177" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365939476722" ignored="false" />
+    <file path="/DragBox.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365062926513" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +115,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DragBox.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
+      <file leaf-file-name="jscssSolution.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="410" column="3" selection-start="12671" selection-end="12671" vertical-scroll-proportion="0.6758621">
+            <state line="304" column="4" selection-start="10484" selection-end="10484" vertical-scroll-proportion="0.24477611">
               <folding />
             </state>
           </provider>
@@ -61,6 +145,8 @@
         <option value="$PROJECT_DIR$/jquery.scrolltotop.js" />
         <option value="$PROJECT_DIR$/arrow/arrow.html" />
         <option value="$PROJECT_DIR$/base.css" />
+        <option value="$PROJECT_DIR$/DragBox/js/drag.js" />
+        <option value="$PROJECT_DIR$/DragBox/DragBox.html" />
         <option value="$PROJECT_DIR$/jscssSolution.txt" />
       </list>
     </option>
@@ -115,20 +201,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wkylin-snippets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wkylin-snippets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DragBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -140,15 +212,12 @@
     <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
     <servers>
-      <server id="af5a6ae6-bfe8-49db-9935-68a366bc12d1">
-        <serverdata />
-      </server>
-      <server id="c8d58702-2ba6-4d0c-9914-441f2e0b131a">
+      <server id="66007d09-7988-4099-a91b-f461dff8a330">
         <serverdata />
       </server>
     </servers>
@@ -214,12 +283,13 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5105783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22772278" sideWeight="0.48942173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22772278" sideWeight="0.49019608" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -277,7 +347,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Drag Box" />
+    <option name="LAST_COMMIT_MESSAGE" value="textarea word-break" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -294,36 +364,12 @@
     <MESSAGE value="solution" />
     <MESSAGE value="html5 easy template print.css" />
     <MESSAGE value="Drag Box" />
+    <MESSAGE value="textarea word-break" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IE9.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="58" selection-end="89" vertical-scroll-proportion="0.108843535" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectivizr-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="144" selection-end="144" vertical-scroll-proportion="0.054421768" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="134" selection-end="134" vertical-scroll-proportion="0.108843535" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui-form-validate/demo_normal_username.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="311" selection-end="311" vertical-scroll-proportion="0.36697248" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/ui-paging.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="33" selection-start="388" selection-end="388" vertical-scroll-proportion="-5.6708074" />
@@ -344,11 +390,6 @@
         <state line="9" column="29" selection-start="194" selection-end="194" vertical-scroll-proportion="-0.7569546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui-form/ui-formTest.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.58715594" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/print.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -356,35 +397,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slider 1.1/slider/slider.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="7" selection-start="3610" selection-end="3610" vertical-scroll-proportion="0.49079755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="10" selection-start="12614" selection-end="12614" vertical-scroll-proportion="0.49852508">
-          <folding />
-        </state>
+        <state line="106" column="7" selection-start="3610" selection-end="3610" vertical-scroll-proportion="0.49079755" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Easy HTML5 Template.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="54" selection-start="72" selection-end="72" vertical-scroll-proportion="0.030075189">
-          <folding />
-        </state>
+        <state line="2" column="54" selection-start="72" selection-end="72" vertical-scroll-proportion="0.030075189" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="833" selection-end="833" vertical-scroll-proportion="0.029498525">
+        <state line="21" column="20" selection-start="833" selection-end="833" vertical-scroll-proportion="0.029498525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgscroll/demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS3MenuHoverEffect/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui-form-validate/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/级联选择/jilian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="820" selection-end="820" vertical-scroll-proportion="-16.551723">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="410" column="3" selection-start="12671" selection-end="12671" vertical-scroll-proportion="0.6758621">
+        <state line="125" column="4" selection-start="3415" selection-end="3415" vertical-scroll-proportion="0.51326054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgscroll/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="411" selection-end="411" vertical-scroll-proportion="0.037441496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="304" column="4" selection-start="10484" selection-end="10484" vertical-scroll-proportion="0.24477611">
           <folding />
         </state>
       </provider>
