@@ -380,4 +380,14 @@ div a:link, div a:visited{ border-bottom:2px solid #f00; }
 div a:hover{ border-bottom:2px solid #00f; }
 div a:active{ border-bottom:2px solid #00f; outline:0 none; position:relative; top:1px; }
 
+去除链接元素的虚线框 兼容IE7、IE6、FF
+--------------------------------------------------------------------------------------------
+a:focus{
+    outline:none;
+    -moz-outline:none;
+}
+input,textarea {outline:none;}
+针对IE6还有一种方法
+<a href="#" hidefocus="true">去除IE6虚线框</a
+
 
