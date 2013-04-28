@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jscssSolution.txt" afterPath="$PROJECT_DIR$/jscssSolution.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grayscale网站变灰/grayscale.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="0ad495a1-0f92-4a07-899a-83963fdfe0c7" name="Rejected commit: Default" comment="" />
     <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366598929404" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1367123935681" ignored="false" />
     <file path="/DragBox.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365062926513" ignored="false" />
+    <file path="/flash.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950370136" ignored="false" />
+    <file path="/flash.js" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950469238" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +32,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jscssSolution.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jscssSolution.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="383" column="92" selection-start="13478" selection-end="13478" vertical-scroll-proportion="0.7640118">
+            <state line="225" column="0" selection-start="7920" selection-end="8768" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drag.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="380" column="23" selection-start="12739" selection-end="12745" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DragBox.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="57" selection-start="2794" selection-end="2794" vertical-scroll-proportion="-1.4615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grayscale.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grayscale网站变灰/grayscale.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="1" selection-start="633" selection-end="633" vertical-scroll-proportion="0.30075186">
               <folding />
             </state>
           </provider>
@@ -63,6 +92,8 @@
         <option value="$PROJECT_DIR$/DragBox/js/drag.js" />
         <option value="$PROJECT_DIR$/DragBox/DragBox.html" />
         <option value="$PROJECT_DIR$/jscssSolution.txt" />
+        <option value="$PROJECT_DIR$/arrow/js/flash.js" />
+        <option value="$PROJECT_DIR$/arrow/flash.html" />
       </list>
     </option>
   </component>
@@ -98,6 +129,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -116,9 +148,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grayscale网站变灰" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,6 +172,7 @@
     <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -142,6 +188,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\Github\wkylin-snippets\grayscale网站变灰" />
       <recent name="I:\Github\wkylin-snippets" />
       <recent name="H:\wkylin-snippets\wkylin-snippets" />
     </key>
@@ -194,7 +241,11 @@
       <created>1364895065205</created>
       <updated>1364895065205</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="textarea word-break">
+      <created>1366598962913</created>
+      <updated>1366598962913</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -205,10 +256,10 @@
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22772278" sideWeight="0.49019608" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22772278" sideWeight="0.6713681" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -288,14 +339,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/ui-paging.css">
+    <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="388" selection-end="388" vertical-scroll-proportion="-5.6708074" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/ui-recruit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="746" selection-end="746" vertical-scroll-proportion="0.51376146" />
+        <state line="105" column="36" selection-start="2887" selection-end="2887" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/ui-paging-yellow.html">
@@ -338,11 +386,6 @@
         <state line="9" column="27" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui-form-validate/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="26" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" />
@@ -353,13 +396,6 @@
         <state line="20" column="18" selection-start="820" selection-end="820" vertical-scroll-proportion="-16.551723" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="4" selection-start="3415" selection-end="3415" vertical-scroll-proportion="0.51326054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imgscroll/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="31" selection-start="411" selection-end="411" vertical-scroll-proportion="0.037441496" />
@@ -367,7 +403,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="383" column="92" selection-start="13478" selection-end="13478" vertical-scroll-proportion="0.7640118">
+        <state line="225" column="0" selection-start="7920" selection-end="8768" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="380" column="23" selection-start="12739" selection-end="12745" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="57" selection-start="2794" selection-end="2794" vertical-scroll-proportion="-1.4615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grayscale网站变灰/grayscale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="1" selection-start="633" selection-end="633" vertical-scroll-proportion="0.30075186">
           <folding />
         </state>
       </provider>
