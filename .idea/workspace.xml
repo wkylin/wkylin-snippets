@@ -3,12 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery智能定位\capacityFixed.html" afterPath="$PROJECT_DIR$/jQuery-capacityFixed/capacityFixed.html" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\CitySelect.html" afterPath="$PROJECT_DIR$/jQuery-CitySelect/CitySelect.html" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\Scripts\jquery-1.3.2.min.js" afterPath="$PROJECT_DIR$/jQuery-CitySelect/Scripts/jquery-1.3.2.min.js" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\Scripts\jquery.provincesCity.js" afterPath="$PROJECT_DIR$/jQuery-CitySelect/Scripts/jquery.provincesCity.js" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\Scripts\provincesdata.js" afterPath="$PROJECT_DIR$/jQuery-CitySelect/Scripts/provincesdata.js" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jquery给选择器指定上下文\base.css" afterPath="$PROJECT_DIR$/jquery-context/base.css" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jquery给选择器指定上下文\context.html" afterPath="$PROJECT_DIR$/jquery-context/context.html" />
+      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jquery给选择器指定上下文\jquery-1.7.1.js" afterPath="$PROJECT_DIR$/jquery-context/jquery-1.7.1.js" />
     </list>
     <list id="0ad495a1-0f92-4a07-899a-83963fdfe0c7" name="Rejected commit: Default" comment="" />
     <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1369616897488" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1369616910183" ignored="false" />
     <file path="/DragBox.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365062926513" ignored="false" />
     <file path="/flash.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950370136" ignored="false" />
     <file path="/flash.js" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950469238" ignored="false" />
@@ -32,53 +40,7 @@
     <favorites_list name="wkylin-snippets" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="jscssSolution.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="236" column="9" selection-start="8323" selection-end="8323" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VerticalText.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VerticalText.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.33742332">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drag.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="299" column="42" selection-start="9708" selection-end="9708" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DragBox.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="12" selection-start="3117" selection-end="3117" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grayscale.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grayscale-web/grayscale.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -160,19 +122,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-context" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jQuery-CitySelect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkylin-snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jQuery-capacityFixed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="93" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="117" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="101" />
     <property name="options.lastSelected" value="preferences.externalResources" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="133" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1026" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="130" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="114" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
     <servers>
@@ -259,13 +279,18 @@
       <created>1368498837127</created>
       <updated>1368498837127</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="grayscale">
+      <created>1369616914292</created>
+      <updated>1369616914292</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -275,12 +300,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -409,20 +433,6 @@
         <state line="9" column="31" selection-start="411" selection-end="411" vertical-scroll-proportion="0.037441496" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grayscale-web/grayscale.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="12" selection-start="3117" selection-end="3117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="299" column="42" selection-start="9708" selection-end="9708" vertical-scroll-proportion="0.0">
@@ -430,16 +440,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
+    <entry file="file://$PROJECT_DIR$/VerticalText.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="9" selection-start="8323" selection-end="8323" vertical-scroll-proportion="0.0">
+        <state line="9" column="3" selection-start="186" selection-end="186" vertical-scroll-proportion="0.2760736">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VerticalText.html">
+    <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.33742332">
+        <state line="113" column="12" selection-start="3117" selection-end="3117" vertical-scroll-proportion="0.35582823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grayscale-web/grayscale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.030075189">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="236" column="9" selection-start="8323" selection-end="8323" vertical-scroll-proportion="0.029498525">
           <folding />
         </state>
       </provider>
