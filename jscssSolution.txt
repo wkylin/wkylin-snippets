@@ -276,7 +276,7 @@ display: inline-block;
 *zoom: 1;
 }
 
-.inHeight{
+.minHeight{
 min-height: 200px;
 _height: 200px; / hack for ie6 */
 }
@@ -388,6 +388,135 @@ a:focus{
 }
 input,textarea {outline:none;}
 针对IE6还有一种方法
-<a href="#" hidefocus="true">去除IE6虚线框</a
+<a href="#" hidefocus="true">去除IE6虚线框</a>
 
+垂直居中内容
+---------------------------------------------------------------------------------------------
+    .container {
+        min-height: 6.5em;
+        display: table-cell;
+        vertical-align: middle;
+    }
 
+强制垂直滚动条
+------------------------------------------------------------------------------------------------
+html { height: 101% }
+
+跨浏览器的最小高度
+-----------------------------------------------------------------------------------------------
+    #container {
+        min-height: 550px;
+        height: auto !important;
+        height: 550px;
+    }
+
+CSS3发光输入框
+------------------------------------------------------------------------------------------------
+        input[type=text], textarea {
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+            padding: 3px 0px 3px 3px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid #ddd;
+        }
+
+        input[type=text]:focus, textarea:focus {
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            padding: 3px 0px 3px 3px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid rgba(81, 203, 238, 1);
+        }
+
+强制代码包装
+-------------------------------------------------------------------------------------------------
+    pre {
+        white-space: pre-wrap;       /* css-3 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+网页顶端阴影
+-------------------------------------------------------------------------------------------------
+        body:before {
+            content: "";
+            position: fixed;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+
+            -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+            -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+            box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+            z-index: 100;
+        }
+
+CSS悬停工具提示
+-------------------------------------------------------------------------------------------------
+            a {
+                border-bottom:1px solid #bbb;
+                color:#666;
+                display:inline-block;
+                position:relative;
+                text-decoration:none;
+            }
+            a:hover,
+            a:focus {
+                color:#36c;
+            }
+            a:active {
+                top:1px;
+            }
+
+            /* Tooltip styling */
+            a[data-tooltip]:after {
+                border-top: 8px solid #222;
+                border-top: 8px solid hsla(0,0%,0%,.85);
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                content: "";
+                display: none;
+                height: 0;
+                width: 0;
+                left: 25%;
+                position: absolute;
+            }
+            a[data-tooltip]:before {
+                background: #222;
+                background: hsla(0,0%,0%,.85);
+                color: #f6f6f6;
+                content: attr(data-tooltip);
+                display: none;
+                font-family: sans-serif;
+                font-size: 14px;
+                height: 32px;
+                left: 0;
+                line-height: 32px;
+                padding: 0 15px;
+                position: absolute;
+                text-shadow: 0 1px 1px hsla(0,0%,0%,1);
+                white-space: nowrap;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+            }
+            a[data-tooltip]:hover:after {
+                display: block;
+                top: -9px;
+            }
+            a[data-tooltip]:hover:before {
+                display: block;
+                top: -41px;
+            }
+            a[data-tooltip]:active:after {
+                top: -10px;
+            }
+            a[data-tooltip]:active:before {
+                top: -42px;
+            }

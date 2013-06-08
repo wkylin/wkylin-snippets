@@ -2,26 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7765fe6-6ac9-4112-959c-98adc2118e20" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jscssSolution.txt" afterPath="$PROJECT_DIR$/jscssSolution.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery智能定位\capacityFixed.html" afterPath="$PROJECT_DIR$/jQuery-capacityFixed/capacityFixed.html" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\CitySelect.html" afterPath="$PROJECT_DIR$/jQuery-CitySelect/CitySelect.html" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\Scripts\jquery-1.3.2.min.js" afterPath="$PROJECT_DIR$/jQuery-CitySelect/Scripts/jquery-1.3.2.min.js" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\Scripts\jquery.provincesCity.js" afterPath="$PROJECT_DIR$/jQuery-CitySelect/Scripts/jquery.provincesCity.js" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jQuery省市区三级联动\Scripts\provincesdata.js" afterPath="$PROJECT_DIR$/jQuery-CitySelect/Scripts/provincesdata.js" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jquery给选择器指定上下文\base.css" afterPath="$PROJECT_DIR$/jquery-context/base.css" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jquery给选择器指定上下文\context.html" afterPath="$PROJECT_DIR$/jquery-context/context.html" />
-      <change type="MOVED" beforePath="I:\Github\wkylin-snippets\jquery给选择器指定上下文\jquery-1.7.1.js" afterPath="$PROJECT_DIR$/jquery-context/jquery-1.7.1.js" />
     </list>
     <list id="0ad495a1-0f92-4a07-899a-83963fdfe0c7" name="Rejected commit: Default" comment="" />
     <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1369616910183" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1370653879346" ignored="false" />
     <file path="/DragBox.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365062926513" ignored="false" />
     <file path="/flash.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950370136" ignored="false" />
     <file path="/flash.js" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950469238" ignored="false" />
     <file path="/html5.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1368060811188" ignored="false" />
     <file path="/wordbreak.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1368498764825" ignored="false" />
+    <file path="/jscssSolution.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1369988720619" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +34,17 @@
     <favorites_list name="wkylin-snippets" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="jscssSolution.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="459" column="97" selection-start="15914" selection-end="15914" vertical-scroll-proportion="0.7935103">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -63,11 +67,11 @@
         <option value="$PROJECT_DIR$/base.css" />
         <option value="$PROJECT_DIR$/DragBox/js/drag.js" />
         <option value="$PROJECT_DIR$/DragBox/DragBox.html" />
-        <option value="$PROJECT_DIR$/jscssSolution.txt" />
         <option value="$PROJECT_DIR$/arrow/js/flash.js" />
         <option value="$PROJECT_DIR$/arrow/flash.html" />
         <option value="$PROJECT_DIR$/html5.html" />
         <option value="$PROJECT_DIR$/wordbreak.html" />
+        <option value="$PROJECT_DIR$/jscssSolution.txt" />
       </list>
     </option>
   </component>
@@ -103,7 +107,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,6 +169,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,17 +186,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="133" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1026" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1026" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="130" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="114" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
     <servers>
@@ -283,14 +287,17 @@
       <created>1369616914292</created>
       <updated>1369616914292</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="grayscale">
+      <created>1369617962964</created>
+      <updated>1369617962964</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -305,6 +312,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -435,35 +443,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DragBox/js/drag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="299" column="42" selection-start="9708" selection-end="9708" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="299" column="42" selection-start="9708" selection-end="9708" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VerticalText.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="186" selection-end="186" vertical-scroll-proportion="0.2760736">
-          <folding />
-        </state>
+        <state line="9" column="3" selection-start="186" selection-end="186" vertical-scroll-proportion="0.2760736" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DragBox/DragBox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="12" selection-start="3117" selection-end="3117" vertical-scroll-proportion="0.35582823">
-          <folding />
-        </state>
+        <state line="113" column="12" selection-start="3117" selection-end="3117" vertical-scroll-proportion="0.35582823" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grayscale-web/grayscale.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.030075189">
-          <folding />
-        </state>
+        <state line="23" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.030075189" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="9" selection-start="8323" selection-end="8323" vertical-scroll-proportion="0.029498525">
+        <state line="459" column="97" selection-start="15914" selection-end="15914" vertical-scroll-proportion="0.7935103">
           <folding />
         </state>
       </provider>
