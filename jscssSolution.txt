@@ -543,3 +543,8 @@ select使用append进option无法自适应宽度
 $("#SelectID").hide().show();
 另外一种可能的解决方案是:
 使用原生js的options.add向select中添加。
+
+在IE6和IE7下隐藏溢出overflow:hidden;失效
+--------------------------------------------------------------------------
+关于IE6\IE7下内容元素有相对定位：position: relative;，在IE6和IE7下隐藏溢出overflow:hidden;失效.
+在父级元素增加position: relative

@@ -9,13 +9,13 @@
     <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1372308081842" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1373450188550" ignored="false" />
     <file path="/DragBox.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365062926513" ignored="false" />
     <file path="/flash.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950370136" ignored="false" />
     <file path="/flash.js" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950469238" ignored="false" />
     <file path="/html5.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1368060811188" ignored="false" />
     <file path="/wordbreak.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1368498764825" ignored="false" />
-    <file path="/jscssSolution.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1369988720619" ignored="false" />
+    <file path="/jscssSolution.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1373450236179" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
       <file leaf-file-name="jscssSolution.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="544" column="0" selection-start="18427" selection-end="18427" vertical-scroll-proportion="0.82300884">
+            <state line="543" column="35" selection-start="18426" selection-end="18426" vertical-scroll-proportion="0.67551625">
               <folding />
             </state>
           </provider>
@@ -107,6 +107,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,7 +184,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,21 +200,24 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="133" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1026" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1026" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="130" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="114" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
     <servers>
       <server id="af5a6ae6-bfe8-49db-9935-68a366bc12d1">
+        <serverdata />
+      </server>
+      <server id="c8c3dd28-1f48-4326-9f6b-5ff7ca79da13">
         <serverdata />
       </server>
     </servers>
@@ -310,7 +313,11 @@
       <created>1372306849470</created>
       <updated>1372306849470</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="grayscale">
+      <created>1372308152853</created>
+      <updated>1372308152853</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -484,7 +491,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="544" column="0" selection-start="18427" selection-end="18427" vertical-scroll-proportion="0.82300884">
+        <state line="543" column="35" selection-start="18426" selection-end="18426" vertical-scroll-proportion="0.67551625">
           <folding />
         </state>
       </provider>
