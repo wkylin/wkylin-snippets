@@ -9,7 +9,7 @@
     <list id="51ca346f-9f74-4e1f-bd1d-2eb319ed5b6a" name="Rejected commit: Default (2)" comment="Drag Box" />
     <ignored path="wkylin-snippets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1373450188550" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1373515718340" ignored="false" />
     <file path="/DragBox.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1365062926513" ignored="false" />
     <file path="/flash.html" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950370136" ignored="false" />
     <file path="/flash.js" changelist="b7765fe6-6ac9-4112-959c-98adc2118e20" time="1366950469238" ignored="false" />
@@ -38,7 +38,7 @@
       <file leaf-file-name="jscssSolution.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="543" column="35" selection-start="18426" selection-end="18426" vertical-scroll-proportion="0.67551625">
+            <state line="568" column="36" selection-start="19176" selection-end="19176" vertical-scroll-proportion="0.2920354">
               <folding />
             </state>
           </provider>
@@ -107,7 +107,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,6 +183,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,17 +200,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="133" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1026" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1028" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="130" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="114" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="snippets" serverId="6b33d344-7f3e-4af4-baab-076c1110cd9c">
     <servers>
@@ -317,7 +317,11 @@
       <created>1372308152853</created>
       <updated>1372308152853</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="position: relative">
+      <created>1373450267326</created>
+      <updated>1373450267326</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -388,7 +392,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="grayscale" />
+    <option name="LAST_COMMIT_MESSAGE" value="position: relative" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -407,6 +411,7 @@
     <MESSAGE value="Drag Box" />
     <MESSAGE value="textarea word-break" />
     <MESSAGE value="grayscale" />
+    <MESSAGE value="position: relative" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -491,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jscssSolution.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="543" column="35" selection-start="18426" selection-end="18426" vertical-scroll-proportion="0.67551625">
+        <state line="568" column="36" selection-start="19176" selection-end="19176" vertical-scroll-proportion="0.2920354">
           <folding />
         </state>
       </provider>
