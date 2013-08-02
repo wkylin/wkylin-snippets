@@ -575,6 +575,16 @@ function bodyLoad(){
     setTimeout(bodyLoad,1000);
 }
 
+function fnDate(){
+        var dateTime=new Date();
+        var yy=dateTime.getFullYear();
+        var MM=dateTime.getMonth()+1;
+        var dd=dateTime.getDate();
+        var week=dateTime.getDay();
+        var days=[ "日 ", "一 ", "二 ", "三 ", "四 ", "五 ", "六 "];
+        $("#J_date").html(yy+"年"+MM+"月"+dd+"日<span class='fn-space'>星期"+days[week]+"</span>");
+    }
+
 天气插件
 -------------------------------------------------------------------------------------------
 <iframe width="300" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5"></iframe>
@@ -583,4 +593,14 @@ function bodyLoad(){
 -------------------------------------------------------------------------------------------
 <a id="sethomepage"  href='#' onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://hao.gofacai.com/');">设为主页</a>
 <a id="shoucang" href='#' onclick='window.external.AddFavorite("http://hao.gofacai.com/","")'>收藏页面</a>
+
+
+ 回车提交
+ ---------------------------------------------------------------------------------------------------------
+ $(document).keydown(function (e) {
+     var e = e || event, keyCode = e.which || e.keyCode;
+     if (keyCode == 13) {
+         $("#J_couponFormSubmit").trigger("click");
+     }
+ });
 
