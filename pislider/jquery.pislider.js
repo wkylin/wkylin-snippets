@@ -6,11 +6,11 @@
 (function ($) {
     $.fn.pislider = function (options) {
         var defaults = {
-            child:"child",
-            slider_bar:"slider_bar",
-            scrollTime:500,
-            autoScroll:"true",
-            autoTime:7000
+            child: "child",
+            slider_bar: "slider_bar",
+            scrollTime: 500,
+            autoScroll: "true",
+            autoTime: 7000
         };
 
         var options = $.extend(defaults, options);
@@ -24,7 +24,7 @@
         var thr_width = width * 3;
 
         var wrap = $("#scroll_wrapper");
-        wrap.css({width:thr_width + "px", left:-width + "px"});
+        wrap.css({width: thr_width + "px", left: -width + "px"});
         child.not(":first").hide();
 
         function noMove() {
@@ -34,10 +34,7 @@
             else {
                 return false;
             }
-            ;
         }
-
-        ;
 
 
         child.each(function (index) {
@@ -47,7 +44,6 @@
             else {
                 slider_bar.append("<a href='#'></a>");
             }
-            ;
         });
         var cur_a = slider_bar.find("a.cur");
 
@@ -65,22 +61,19 @@
                 else {
                     return false;
                 }
-                ;
             }
-            ;
             return false;
         });
 
         function scroll(num, scroll_width) {
             slider_bar.find("a").eq(num).addClass("cur").siblings().removeClass("cur");
-            child.eq(num).show().css({left:scroll_width + "px"});
-            wrap.animate({left:-scroll_width + "px"}, options.scrollTime, function () {
-                child.eq(num).css({left:width + "px"}).siblings().hide();
-                wrap.css({left:-width + "px"});
+            child.eq(num).show().css({left: scroll_width + "px"});
+            wrap.animate({left: -scroll_width + "px"}, options.scrollTime, function () {
+                child.eq(num).css({left: width + "px"}).siblings().hide();
+                wrap.css({left: -width + "px"});
             });
         }
 
-        ;
 
         $("#btn_prev").click(function () {
             var curIndex = slider_bar.find("a.cur").index();
@@ -91,9 +84,7 @@
                 else {
                     slider_bar.find("a.cur").prev("a").trigger("click");
                 }
-                ;
             }
-            ;
             return false;
         });
 
@@ -106,9 +97,7 @@
                 else {
                     slider_bar.find("a.cur").next("a").trigger("click");
                 }
-                ;
             }
-            ;
             return false;
         });
 
@@ -127,6 +116,5 @@
             _this.hover(stopPlay, autoPlay);
             $("#btn_prev,#btn_next").hover(stopPlay, autoPlay);
         }
-        ;
     };
 })(jQuery);
