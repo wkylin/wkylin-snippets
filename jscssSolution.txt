@@ -1,46 +1,64 @@
 
+windowOnLoad封装
+-----------------------------------------------------------------------------------------------------------------
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {  
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function t(){
+alert("t")
+}
+function b(){
+alert("b")
+}
+function c(){
+alert("c")
+}
+addLoadEvent(t);
+addLoadEvent(b);
+addLoadEvent(c);
+//等价于  window.onload =function() { t();  b(); c() ;}
+
+
+
+getIFrameDom
+----------------------------------------------------------------------------------------------------------------
 function getIFrameDOM(id){return document.getElementById(id).contentDocument || document.frames[id].document;}
 
 
+添加hover效果
+-------------------------------------------------------------
 <style type=”text/css”>
-  
       p:hover,p.hover { background:#eee; }
-
 </style> 
-
-
 <script type=”text/javascript”>
-
 function $(){ 
 	if(document.all){ // 判断是否IE浏览器
-
            var obj=document.all;
-
             for(var i=0;i<obj.length;i++){ 
-
                   obj[i].onmouseover=function(){  
-
                         this.className="hover";
-
                   } ;
-
                   obj[i].onmouseout=function(){ 
-
                         this.className="";
-
                   }
-
             }  
-
       } 
-
 } 
 $(); 
 
 
-
+判断是否为IE6
+---------------------------------------------------------------
 Jquery:
-
 $.browser.msie && parseInt($.browser.version) <= 6
 
 (function(){
@@ -49,6 +67,7 @@ $.browser.msie && parseInt($.browser.version) <= 6
 	if(isIE){if(isIE6){alert('您正在使用低版本浏览器,为了保证您能有更好的访问效果,我们建议您使用谷歌Chrome浏览器、火狐Firefox浏览器或者IE7以上版
 本浏览器！');}}
 })();
+
 
 function correctPNG() {
     for (var i = 0; i < document.images.length; i++) {
@@ -604,3 +623,83 @@ function fnDate(){
      }
  });
 
+
+
+处理键盘事件 禁止后退键（Backspace）密码或单行、多行文本框除外
+--------------------------------------------------------------------------------------------------------------------
+http://www.2016k.com/skillonpage/javascript/07-62.html
+function banBackSpace(e){
+    var ev = e || window.event;//获取event对象
+    var obj = ev.target || ev.srcElement;//获取事件源
+    var t = obj.type || obj.getAttribute('type');//获取事件源类型
+    //获取作为判断条件的事件类型
+    var vReadOnly = obj.readOnly;
+    var vDisabled = obj.disabled;
+    //处理undefined值情况
+    vReadOnly = (vReadOnly == undefined) ? false : vReadOnly;
+    vDisabled = (vDisabled == undefined) ? true : vDisabled;
+    //当敲Backspace键时，事件源类型为密码或单行、多行文本的，
+    //并且readOnly属性为true或disabled属性为true的，则退格键失效
+    var flag1= ev.keyCode == 8 && (t=="password" || t=="text" || t=="textarea")&& (vReadOnly==true || vDisabled==true);
+    //当敲Backspace键时，事件源类型非密码或单行、多行文本的，则退格键失效
+    var flag2= ev.keyCode == 8 && t != "password" && t != "text" && t != "textarea" ;
+    //判断
+    if(flag2 || flag1)return false;
+}
+//禁止退格键 作用于Firefox、Opera
+document.onkeypress=banBackSpace;
+//禁止退格键 作用于IE、Chrome
+document.onkeydown=banBackSpace;
+
+
+
+当 jQuery 对象不存在的时候, 再加载 jquery.js 
+----------------------------------------------------------------------------------------------------------------------------
+    //if the jQuery object isn't available
+    if (typeof(jQuery) == 'undefined') {
+
+        document.write('<scr' + 'ipt type="text/javascript" src="http://domain.com/js/jquery-1.6.2.js"></scr' + 'ipt>');
+        document.write('<scr' + 'ipt type="text/javascript">$.noConflict();</scr' + 'ipt>');
+
+    } else {
+
+        document.write('<scr' + 'ipt type="text/javascript">$.noConflict();</scr' + 'ipt>');
+
+    }
+
+更加简练的写法: 
+------------------------------------------------------------------------------------------
+     !window.jQuery && document.write('<scr' + 'ipt type="text/javascript" src="http://domain.com/js/jquery-1.6.2.js"></scr' + 'ipt>');
+
+
+判断js数组包是否包含某个元素 
+-----------------------------------------------------------------------------------------------
+Array.prototype.isHas=function (value){
+    var max=this.length,res=false;
+    if(max==0){return false};
+    for(var i=0;i<max;i++){
+        for(var name in this[i]){
+            if(name==value){
+                res=true;
+                break;
+            }
+        };
+        if(res){break}
+    };
+    return res;
+};
+var arr = [{ "A": "a", "B": "b" }, { "C": "a", "D": "b" }, { "e": "c"}];
+var str=arr.isHas("A")?'存在':'不存在';
+alert(str)
+
+
+
+禁止form重复提交
+-------------------------------------------------------------------------------
+$("form").submit(function () {
+   console.log("提交了");
+    $("input:submit").attr("disabled", "true");
+    setTimeout(function () {
+	$("input:submit").removeAttr("disabled");
+   }, 3000);
+});
