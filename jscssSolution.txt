@@ -1,4 +1,59 @@
 
+JavaScript 跨浏览器事件处理
+-------------------------------------------------------------------------
+var eventUtility = {
+	addEvent : function(el, type, fn) {
+		if(typeof addEventListener !== "undefined") {
+			el.addEventListener(type, fn, false);
+		} else if(typeof attachEvent !== "undefined") {
+			el.attachEvent("on" + type, fn);
+		} else {
+			el["on" + type] = fn;
+		}
+	},
+
+	removeEvent : function(el, type, fn) {
+		if(typeof removeEventListener !== "undefined") {
+			el.removeEventListener(type, fn, false);
+		} else if(typeof detachEvent !== "undefined") {
+			el.detachEvent("on" + type, fn);
+		} else {
+			el["on" + type] = null;
+		}
+	},
+
+	getTarget : function(event) {
+		if(typeof event.target !== "undefined") {
+			return event.target;
+		} else {
+			return event.srcElement;
+		}
+	},
+
+	preventDefault : function(event) {
+		if(typeof event.preventDefault !== "undefined") {
+			event.preventDefault();
+		} else {
+			event.returnValue = false;
+		}
+	}
+};
+
+
+
+// 创建全局的 '$' 变量
+----------------------------------------------------------------------
+  window.$ = function(selector) {
+    return document.querySelector(selector);
+  };
+
+  (function() {
+    // 通过id查找item1，将它的背景颜色修改为浅红
+    var item = $("#salmon").style.backgroundColor="salmon";
+    console.log(item);
+  }());  
+
+
 windowOnLoad封装
 -----------------------------------------------------------------------------------------------------------------
 function addLoadEvent(func) {
