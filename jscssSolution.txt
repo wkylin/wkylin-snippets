@@ -1,6 +1,18 @@
-判断浏览器是否启用cookie
+判断浏览器是否支持cookie
 ---------------------------------------------------------
 var cookieEnabled=navigator.cookieEnabled?true:false;
+
+判断浏览器是否禁用COOKIE
+------------------------------------------------------------------------
+    /**
+     * Disable返回true
+     * @returns {boolean}
+     */
+    function isDisableCookie(){
+        var  cookieEnabled= "jscookietest=valid";
+        document.cookie = cookieEnabled;
+        return document.cookie.indexOf(cookieEnabled) == -1?true:false;
+    }
 
 
 JavaScript 跨浏览器事件处理
