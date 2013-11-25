@@ -1,5 +1,12 @@
 input:-webkit-autofill 谷歌浏览器 修改input输入框的颜色 
 --------------------------------------------------------------------------
+默认样式：
+input:-webkit-autofill {
+    background-color: hsl(65, 100%, 87%);
+    background-image: none;
+    color: #000000;
+}
+解决方案
 1.给form表单添加autocomplete="off"
 2.input添加outline:none;
 3.input:-webkit-autofill {
