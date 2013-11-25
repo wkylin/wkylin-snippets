@@ -1,3 +1,47 @@
+input:-webkit-autofill 谷歌浏览器 修改input输入框的颜色 
+--------------------------------------------------------------------------
+1.给form表单添加autocomplete="off"
+2.input添加outline:none;
+3.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+4.用背景图片解决方案
+if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
+ $(window).load(function(){
+  $('input:-webkit-autofill').each(function(){
+   var text = $(this).val();
+   var name = $(this).attr('name');
+   $(this).after(this.outerHTML).remove();
+   $('input[name=' + name + ']').val(text);
+  });
+ });
+}
+
+
+设为首页：
+----------------------------------------------------------------------------------------------
+http://www.huanqiu.com/addhomelist/index.html
+
+
+//跳转地址
+----------------------------------------------------------------------------------------------
+<script type="text/javascript">
+(function (W) {
+    var search = document.location.href;
+    if (/ipad/i.test(navigator.userAgent.toLowerCase())) {
+        if (search != "http://www.huanqiu.com/?from=ipad") {
+            W.location.href = "http://www.huanqiu.com/pad";//跳转地址
+        }
+    }
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent.toLowerCase())) {
+
+        if (search != "http://www.huanqiu.com/?from=mobile") {
+            W.location.href = "http://mt.huanqiu.com/";//跳转地址
+        }
+    }
+})(window);
+</script>
+
 
 IE8及以下版本支持css3-mediaqueries
 -----------------------------------------------------------------------------------------------------
