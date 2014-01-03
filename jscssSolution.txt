@@ -1,3 +1,110 @@
+如果你不想安装Firebug Lite， 只是想避免脚本错误，那么可以在脚本中加入以下语句：  
+-------------------------------------------------------------------------------------
+if (!window.console || !console.firebug) {
+    var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+    window.console = {};
+    for (var i = 0; i < names.length; ++i){
+	window.console[names[i]] = function() {}
+    }
+}
+每次页面刷新后，你都要按F12键打开控制台，是不是很烦？如果不想那么，就在html标签中加入“debug=’true’”， 例如：
+<html debug="true">
+
+34.脚本永不出错
+-------------------------------------------------------------------------------
+< SCRIPT LANGUAGE="JavaScript"> 
+< !--  Hide 
+function killErrors() {  
+return true;  
+}  
+window.onerror = killErrors;  
+//  -- >  
+< /SCRIPT>  
+
+14.  光标是停在文本框文字的前面
+<script type="text/javascript">
+    var el = document.getElementById("Text1");
+    var Range = el.createTextRange();
+    Range.moveEnd('character', el.value.length);
+    Range.moveStart('character', 0); //
+    Range.collapse();
+    Range.select();
+</script> 
+
+14.  光标是停在文本框文字的最后
+-------------------------------------------------------------------------------------------------------
+< script language="javascript"> 
+function cc()
+{
+var e = event.srcElement;
+var r =e.createTextRange(); 
+r.moveStart("character",e.value.length); 
+r.collapse(true);
+r.select(); 
+}
+< /script> 
+< input type=text name=text1 value="123" onfocus="cc()">  
+
+平滑滚动返回顶端
+-------------------------------------------------------------------------------------------------------
+<h1 id="anchor">gbtags.com</h1>
+<a class="topLink" href="#anchor">返回顶端</a>
+
+$(document).ready(function () {
+
+    $("a.topLink").click(function () {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500,
+            easing: "swing"
+        });
+        return false;
+    });
+
+});
+
+
+
+超简单的密码强度提示
+-------------------------------------------------------------------------------------------------------
+$('#pass').keyup(function (e) {
+    var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\W).*$", "g");
+    var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+    var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+    if (false == enoughRegex.test($(this).val())) {
+        $('#passstrength').html('More Characters');
+    } else if (strongRegex.test($(this).val())) {
+        $('#passstrength').className = 'ok';
+        $('#passstrength').html('Strong!');
+    } else if (mediumRegex.test($(this).val())) {
+        $('#passstrength').className = 'alert';
+        $('#passstrength').html('Medium!');
+    } else {
+        $('#passstrength').className = 'error';
+        $('#passstrength').html('Weak!');
+    }
+    return true;
+});
+
+
+
+IE动态创建带name的iframe跳转问题
+-----------------------------------------------------------------------------------------------------
+var iframe;
+try {
+    iframe = document.createElement('<iframe name="test">');
+} catch (ex) {
+    iframe = document.createElement('iframe');
+    iframe.name = 'test';
+}
+
+
+
+邮箱正则表达式：
+ var reg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+
+
 input:-webkit-autofill 谷歌浏览器 修改input输入框的颜色 
 --------------------------------------------------------------------------
 默认样式：
