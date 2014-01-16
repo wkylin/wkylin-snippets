@@ -1,4 +1,54 @@
-如果你不想安装Firebug Lite， 只是想避免脚本错误，那么可以在脚本中加入以下语句：  
+IE10 placeholder 及input 去掉关闭按钮 解决方案
+-----------------------------------------------------------------------------
+去除input 有默认关闭按钮
+input::-ms-clear{display:none;}
+
+chrome firefox placeholder 自定义样式可以通过
+::-webkit-input-placeholder ::-moz-input-placeholder
+
+但是IE10 设置是无效的
+-ms-input-placeholder ｛color:rgba(darken(gray,10%),0.5);｝
+
+此时需要绑定ID 就可以生效，比如
+#nam:-ms-input-placeholder{color:rgba(darken(gray,10%),0.5);}
+很遗憾是绑定class 并不能生效，IE永远是个奇葩
+
+
+media IE hack 处理方案
+--------------------------------------------------------------------
+仅 IE 6 and 7
+@media screen\9 {
+    body { background: red; }
+}
+
+仅 IE 6, 7 and 8
+@media \0screen\,screen\9 {
+    body { background: green; }
+}
+
+
+仅 IE 8
+@media \0screen {
+    body { background: blue; }
+}
+
+
+仅 IE 8, 9 and 10
+@media screen\0 {
+    body { background: orange; }
+}
+
+
+仅 IE 9 and 10
+@media screen and (min-width:0\0) {
+    body { background: yellow; }
+}
+
+CSS,解决背景图片闪动和重复加载的IE6BUG
+--------------------------------------------------
+html {zoom: expression(function(ele){ ele.style.zoom = "1"; document.execCommand("BackgroundImageCache", false, true); }(this)); }
+
+如果你不想安装Firebug Lite， 只是想避免脚本错误，那么可以在脚本中加入以下语句：
 -------------------------------------------------------------------------------------
 if (!window.console || !console.firebug) {
     var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
