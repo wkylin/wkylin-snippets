@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JQUERY仿百度提问页面效果（textarea限制字数并提示还可以输入数）</title>
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //弹出右侧提示框
+            $(".c1").hover(function () {
+
+                $(".c1 .bz").show();
+
+            }, function () {
+
+                $(".c1 .bz").hide();
+
+            });
+
+            $(".c2").hover(function () {
+
+                $(".c2 .bz").show();
+
+            }, function () {
+
+                $(".c2 .bz").hide();
+
+            });
+
+            //补充框展开关闭，文字部分可以用图片代替
+            $(".p_1").toggle(function () {
+
+                $(".c2").slideDown();
+
+                $(".p_1 b").text("向上收起")
+
+            }, function () {
+
+                $(".c2").slideUp();
+
+                $(".p_1 b").text("向下展开")
+
+            });
+
+            //问题框文字提醒和限制字数，并弹出问题补充框
+            $("#one").keyup(function () {
+
+                var maxl = 50;
+
+                var tishi = "还可以输入" + maxl + "个字";
+
+                $(".s_pan").html(tishi);
+
+                var xianyou = $(this).val().length;
+
+                var keyi = maxl - xianyou;
+
+                var tishi = "还可以输入" + keyi + "个字";
+
+                if (xianyou > 49) {
+
+                    var tishi = "还可以输0个字"
+
+                    $(".s_pan").css({"color": "red"});
+
+                } else if (xianyou > 39) {
+
+                    $(".c2").slideDown();
+
+                    $(".p_1 b").text("向上收起")
+
+                    $(".s_pan").css({"color": "#000"});
+
+                } else {
+
+                    $(".s_pan").css({"color": "#000"});
+
+                }
+
+                $(".s_pan").html(tishi);
+
+            });
+
+
+            //问题补充框文字限制及提示。
+
+            $("#two").keyup(function () {
+
+                var maxl = 500;
+
+                $(".s_pan1").html(tishi);
+
+                var tishi = "还可以输入" + maxl + "个字";
+
+                $(".s_pan1").html(tishi);
+
+                var xianyou = $(this).val().length;
+
+                var keyi = maxl - xianyou;
+
+                var tishi = "还可以输入" + keyi + "个字";
+
+                if (xianyou > 499) {
+
+                    var tishi = "还可以输0个字"
+
+                    $(".s_pan1").css({"color": "red"});
+
+                } else {
+                    $(".s_pan1").css({"color": "#000"});
+                }
+
+                $(".s_pan1").html(tishi);
+
+            });
+
+        })
+
+    </script>
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            font-size: 12px;
+            width: 700px;
+            margin: 100px 0 0 100px;
+        }
+
+        .main p span {
+            float: right;
+        }
+
+        p {
+            width: 500px;
+        }
+
+        .c1, .c2 {
+            width: 690px;
+            padding: 5px;
+            position: relative;
+        }
+
+        .c_one, .c_two {
+            border: 1px solid green;
+            height: 100px;
+            width: 500px;
+        }
+
+        textarea {
+            padding: 10px;
+            width: 480px;
+            height: 80px;
+            border: 0;
+            overflow-y: hidden;
+        }
+
+        .c_two {
+            height: 200px;
+        }
+
+        .c_two textarea {
+            height: 180px;
+        }
+
+        .p_1 {
+            padding: 10px 0;
+        }
+
+        .bz {
+            position: absolute;
+            border: 1px solid red;
+            width: 120px;
+            height: 50px;
+            top: 0px;
+            right: 50px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <p><span class="s_pan"></span>请将你的疑问告诉我们把:</p>
+    <div class="c1">
+        <div class="bz">如可像我们提问</div>
+        <div class="c_one"><textarea onkeyup='value=value.substr(0,50)' id="one"></textarea></div>
+    </div>
+    <p class="p_1">问题补充<b>向下展开</b></p>
+    <div class="c2" style="display:none;">
+        <div class="bz">描述清楚问题，方便网友回答</div>
+        <div class="c_two"><textarea onkeyup='value=value.substr(0,500)' id="two"></textarea>
+            <p class="s_pan1"></p></div>
+    </div>
+</div>
+</body>
+</html>

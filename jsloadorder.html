@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JSTEST</title>
+</head>
+<script type="text/javascript">
+    alert("first");
+    function Fn(){
+        alert("third");
+    }
+</script>
+<body onload="Fn()">
+<!--<script type="text/javascript">-->
+    <!--alert("这是代码块一");-->
+<!--</script>-->
+<!--<script type="text/javascript">-->
+    <!--alert("这是代码块二");-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--alert(str);//因为没有定义str，所以浏览器会出错，下面的不能运行-->
+    <!--alert("我是代码块一");//没有运行到这里-->
+    <!--var test = "我是代码块一变量";-->
+<!--</script>-->
+<!--<script type="text/javascript">-->
+    <!--alert("我是代码块二"); //这里有运行到-->
+    <!--alert(test); // 弹窗"undefined" -->
+<!--</script>-->
+
+
+<!--<script type="text/javascript">-->
+    <!--Fn();  //执行结果："执行了函数2",同名函数后者会覆盖前者-->
+    <!--function Fn(){ //函数1-->
+        <!--alert("执行了函数1");-->
+    <!--}-->
+
+    <!--function Fn(){  //函数2-->
+        <!--alert("执行了函数2");-->
+    <!--}-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--Fn();  //执行结果："执行了声明式函数",在预编译期声明函数及被处理了，所以即使Fn()调用函数放在声明函数前也能执行。-->
+    <!--function Fn(){ //声明式函数-->
+        <!--alert("执行了声明式函数");-->
+    <!--}-->
+
+    <!--var Fn = function(){  //赋值式函数-->
+        <!--alert("执行了赋值式函数");-->
+    <!--}-->
+<!--</script>-->
+
+<!--代码块一-->
+<!--<script type="text/javascript">-->
+    <!--alert(str);//浏览器报错,但并没有弹出信息窗-->
+<!--</script>-->
+<!--代码块二-->
+<!--<script type="text/javascript">-->
+    <!--alert(str); //弹窗"undefined"-->
+    <!--var str = "aaa";-->
+<!--</script>-->
+<!--js在预处理期对变量进行了声明处理,但是并没有进行初始化与赋值，所以导致代码块二中的变量是unfiened的，而代码一中的变量是完全不存在的，所以浏览器报错。-->
+
+<!--<script type="text/javascript">-->
+    <!--Fn();  //浏览器报错:"undefined"-->
+<!--</script>-->
+<!--<script type="text/javascript">-->
+    <!--function Fn(){ //函数1-->
+        <!--alert("执行了函数1");-->
+    <!--}-->
+<!--</script>-->
+<script type="text/javascript">
+    alert("second");
+</script>
+</body>
+</html>
