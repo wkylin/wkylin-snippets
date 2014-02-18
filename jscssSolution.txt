@@ -54,7 +54,7 @@ if (!window.console || !console.firebug) {
     var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
     window.console = {};
     for (var i = 0; i < names.length; ++i){
-	window.console[names[i]] = function() {}
+    window.console[names[i]] = function() {}
     }
 }
 每次页面刷新后，你都要按F12键打开控制台，是不是很烦？如果不想那么，就在html标签中加入“debug=’true’”， 例如：
@@ -280,41 +280,41 @@ var cookieEnabled=navigator.cookieEnabled?true:false;
 JavaScript 跨浏览器事件处理
 -------------------------------------------------------------------------
 var eventUtility = {
-	addEvent : function(el, type, fn) {
-		if(typeof addEventListener !== "undefined") {
-			el.addEventListener(type, fn, false);
-		} else if(typeof attachEvent !== "undefined") {
-			el.attachEvent("on" + type, fn);
-		} else {
-			el["on" + type] = fn;
-		}
-	},
+    addEvent : function(el, type, fn) {
+        if(typeof addEventListener !== "undefined") {
+            el.addEventListener(type, fn, false);
+        } else if(typeof attachEvent !== "undefined") {
+            el.attachEvent("on" + type, fn);
+        } else {
+            el["on" + type] = fn;
+        }
+    },
 
-	removeEvent : function(el, type, fn) {
-		if(typeof removeEventListener !== "undefined") {
-			el.removeEventListener(type, fn, false);
-		} else if(typeof detachEvent !== "undefined") {
-			el.detachEvent("on" + type, fn);
-		} else {
-			el["on" + type] = null;
-		}
-	},
+    removeEvent : function(el, type, fn) {
+        if(typeof removeEventListener !== "undefined") {
+            el.removeEventListener(type, fn, false);
+        } else if(typeof detachEvent !== "undefined") {
+            el.detachEvent("on" + type, fn);
+        } else {
+            el["on" + type] = null;
+        }
+    },
 
-	getTarget : function(event) {
-		if(typeof event.target !== "undefined") {
-			return event.target;
-		} else {
-			return event.srcElement;
-		}
-	},
+    getTarget : function(event) {
+        if(typeof event.target !== "undefined") {
+            return event.target;
+        } else {
+            return event.srcElement;
+        }
+    },
 
-	preventDefault : function(event) {
-		if(typeof event.preventDefault !== "undefined") {
-			event.preventDefault();
-		} else {
-			event.returnValue = false;
-		}
-	}
+    preventDefault : function(event) {
+        if(typeof event.preventDefault !== "undefined") {
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    }
 };
 
 
@@ -374,7 +374,7 @@ function getIFrameDOM(id){return document.getElementById(id).contentDocument || 
 </style> 
 <script type=”text/javascript”>
 function $(){ 
-	if(document.all){ // 判断是否IE浏览器
+    if(document.all){ // 判断是否IE浏览器
            var obj=document.all;
             for(var i=0;i<obj.length;i++){ 
                   obj[i].onmouseover=function(){  
@@ -395,9 +395,9 @@ Jquery:
 $.browser.msie && parseInt($.browser.version) <= 6
 
 (function(){
-	var isIE=!!window.ActiveXObject;
-	var isIE6=isIE&&!window.XMLHttpRequest;
-	if(isIE){if(isIE6){alert('您正在使用低版本浏览器,为了保证您能有更好的访问效果,我们建议您使用谷歌Chrome浏览器、火狐Firefox浏览器或者IE7以上版
+    var isIE=!!window.ActiveXObject;
+    var isIE6=isIE&&!window.XMLHttpRequest;
+    if(isIE){if(isIE6){alert('您正在使用低版本浏览器,为了保证您能有更好的访问效果,我们建议您使用谷歌Chrome浏览器、火狐Firefox浏览器或者IE7以上版
 本浏览器！');}}
 })();
 
@@ -447,10 +447,10 @@ function alphaBackgrounds(){
 }
 
 if(isIE){
-	if(isIE6){
-    	window.attachEvent("onload", correctPNG);
-    	window.attachEvent("onload", alphaBackgrounds);
-	}
+    if(isIE6){
+        window.attachEvent("onload", correctPNG);
+        window.attachEvent("onload", alphaBackgrounds);
+    }
 }
 
 解决ie6下png透明的问题：
@@ -472,9 +472,9 @@ if(isIE){
 优点就是使用简单方便，但是不能作为背景，且只能用作单个png图片的使用.
 如果要作为背景，背景不能平铺，需要新增加一个div层，并设置其position:relative;
 <div class="png24">
-	<div style="position:relative;">
-	CSS 背景PNG透明 及 链接失效问题解决
-	</div>
+    <div style="position:relative;">
+    CSS 背景PNG透明 及 链接失效问题解决
+    </div>
 </div>
 注意：src中的路径是图片相对html页面的路径，或是指定绝对路径。
 
@@ -536,9 +536,9 @@ css之透明度
 
 
 /* ----------------------------------------
-	加入收藏
-	$comefrom : 互联网
-	$example : <a href="javascript:void(0);" target="_self" onClick="javascript:AddFavorite('http://www.webjx.com/','网页教学网')">加入收藏</a>
+    加入收藏
+    $comefrom : 互联网
+    $example : <a href="javascript:void(0);" target="_self" onClick="javascript:AddFavorite('http://www.webjx.com/','网页教学网')">加入收藏</a>
 --------------------------------- */
 function AddFavorite(sURL, sTitle)
 {
@@ -554,50 +554,50 @@ function AddFavorite(sURL, sTitle)
 
 
 /* --------------------------------------
-	设为首页
-	$example : <a href="javascript:void(0)" onclick="setHomepage()">设为首页</a>
+    设为首页
+    $example : <a href="javascript:void(0)" onclick="setHomepage()">设为首页</a>
 -------------------------------- */
 function SetHome(obj,vrl){
-	try{ obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl); }
-	catch(e){
-		if(window.netscape) {
-			try { netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  }  
-			catch (e) { 
-				alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将
+    try{ obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl); }
+    catch(e){
+        if(window.netscape) {
+            try { netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  }  
+            catch (e) { 
+                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将
 [signed.applets.codebase_principal_support]设置为'true'");
-			}
-		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
-		prefs.setCharPref('browser.startup.homepage',vrl);
-		}
-	}
+            }
+        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+        prefs.setCharPref('browser.startup.homepage',vrl);
+        }
+    }
 }
 
 
 窗口垂直水平居中
 ---------------------------------------------------------------------------------
 window.onload=window.onresize=function(){
-		var winWidth,winHeight;
-		if (window.innerWidth){
-			winWidth = window.innerWidth;
-		}else if ((document.body) && (document.body.clientWidth)){
-			winWidth = document.body.clientWidth;
-		}
-		if (window.innerHeight){
-			winHeight = window.innerHeight;
-		}else if ((document.body) && (document.body.clientHeight)){
-			winHeight = document.body.clientHeight;
-		}
-		if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth){
-			winHeight = document.documentElement.clientHeight;
-			winWidth = document.documentElement.clientWidth;
-		}
-		var obj=document.getElementById("J_div");
+        var winWidth,winHeight;
+        if (window.innerWidth){
+            winWidth = window.innerWidth;
+        }else if ((document.body) && (document.body.clientWidth)){
+            winWidth = document.body.clientWidth;
+        }
+        if (window.innerHeight){
+            winHeight = window.innerHeight;
+        }else if ((document.body) && (document.body.clientHeight)){
+            winHeight = document.body.clientHeight;
+        }
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth){
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth;
+        }
+        var obj=document.getElementById("J_div");
 
-		var objWidth=obj.clientWidth;
-		var objHeight=obj.clientHeight;
-		obj.style.marginLeft =(winWidth-objWidth)/2 +"px";
-		obj.style.marginTop =(winHeight-objHeight)/2 +"px";
-	}
+        var objWidth=obj.clientWidth;
+        var objHeight=obj.clientHeight;
+        obj.style.marginLeft =(winWidth-objWidth)/2 +"px";
+        obj.style.marginTop =(winHeight-objHeight)/2 +"px";
+    }
 
 
 创建dom各浏览器之间的兼容问题：
@@ -642,9 +642,9 @@ transform: rotate(90deg);
 }
 
 .entry_title{
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .gradient{
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#FFFFFF'); /* IE6–IE9 */ }
@@ -667,12 +667,12 @@ l        soft：自动软回车换行，换行标记不会传送到服务器端�
 logMessage:
 --------------------------------------------------------------------------------------------------------------------
 function doClear(){
-	document.getElementById("divProgress").innerHTML = "";
+    document.getElementById("divProgress").innerHTML = "";
 }
 
 function LogMessage(strMsg){
-	strMsg = (new Date().getSeconds() + ":" + strMsg);
-	document.getElementById("divProgress").innerHTML = (document.getElementById("divProgress").innerHTML + strMsg + "<BR>");
+    strMsg = (new Date().getSeconds() + ":" + strMsg);
+    document.getElementById("divProgress").innerHTML = (document.getElementById("divProgress").innerHTML + strMsg + "<BR>");
 }
 
 var curStyle = function (element) {
@@ -905,8 +905,8 @@ $("#SelectID").hide().show();
 日期&&&&&&时间
 ---------------------------------------------------------------------------------------------
 <div style="width:990px; margin:0 auto;">
-	<div id="J_date"></div>
-	<div id="J_time"></div>
+    <div id="J_date"></div>
+    <div id="J_time"></div>
 </div>
 
 function bodyLoad(){
@@ -1033,6 +1033,6 @@ $("form").submit(function () {
    console.log("提交了");
     $("input:submit").attr("disabled", "true");
     setTimeout(function () {
-	$("input:submit").removeAttr("disabled");
+    $("input:submit").removeAttr("disabled");
    }, 3000);
 });
