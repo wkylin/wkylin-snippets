@@ -1,0 +1,55 @@
+@charset "UTF-8";
+*{padding:0;margin:0;}
+.container {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table
+}
+
+.container:after {
+    clear: both
+}
+
+.unsupported-browser {
+    padding: 15px 0;
+    color: #211e14;
+    background-color: #fae692;
+    background-image: -moz-linear-gradient(#feefae, #fae692);
+    background-image: -webkit-linear-gradient(#feefae, #fae692);
+    background-image: linear-gradient(#feefae, #fae692);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #b3a569
+}
+
+.unsupported-browser .container {
+    background: url("ie-notice.png") no-repeat
+}
+
+.unsupported-browser h5 {
+    font-size: 13px;
+    padding-left: 48px
+}
+
+.unsupported-browser p {
+    margin: 0;
+    padding-left: 48px
+}
+
+.unsupported-browser .button {
+    float: right;
+    padding: 5px 9px;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #b3a569;
+    background-image: none
+}
+
+.unsupported-browser .button:hover {
+    text-decoration: none;
+    background-color: #9b8c4e
+}
