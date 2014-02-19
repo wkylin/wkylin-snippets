@@ -366,6 +366,9 @@ getIFrameDom
 ----------------------------------------------------------------------------------------------------------------
 function getIFrameDOM(id){return document.getElementById(id).contentDocument || document.frames[id].document;}
 
+iframe获取父窗口的元素的值：
+$(".head",window.parent.document).text(); 
+
 
 添加hover效果
 -------------------------------------------------------------
