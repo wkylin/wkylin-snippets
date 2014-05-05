@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招商外包|招商策略|招商加盟|招商营销|招商易_上海通路快建网络投放服务平台</title>
+</head>
+<body>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    function showTime(obj, target, beginTime, endTime) {
+        this.obj = obj;
+        this.beginTime = beginTime;
+        this.endTime = endTime;
+        this.target = target;
+    }
+    showTime.prototype.setTimeShow = function () {
+        var timer = this.obj, targetItem = this.target, timeStr = "";
+        var dayStr = 0, hourStr = 0, minuteStr = 0, secondStr = 0, timeDistance = 0;
+        var nowDate = new Date();
+        var beginDate = new Date(this.beginTime);
+        var endDate = new Date(this.endTime);
+
+        if (beginDate.getTime() - nowDate.getTime() > 0) {
+            timeDistance = beginDate.getTime() - nowDate.getTime();
+            dayStr = Math.floor(timeDistance / 86400000);
+            timeDistance -= dayStr * 86400000;
+            hourStr = Math.floor(timeDistance / 3600000);
+            timeDistance -= hourStr * 3600000;
+            minuteStr = Math.floor(timeDistance / 60000);
+            timeDistance -= minuteStr * 60000;
+            secondStr = Math.floor(timeDistance / 1000);
+            if (hourStr < 10 && hourStr != 0) {
+                hourStr = "0" + hourStr;
+            }
+
+            if (minuteStr < 10 && minuteStr != 0) {
+                minuteStr = "0" + minuteStr;
+            }
+
+            if (secondStr < 10 && secondStr != 0) {
+                secondStr = "0" + secondStr;
+            }
+            timeStr = "剩余" + dayStr + "天" + hourStr + "时" + minuteStr + "分" + secondStr + "秒";
+            var self = this;
+            setTimeout(function () {
+                self.setTimeShow();
+            }, 1000);
+            timer.text(timeStr);
+
+        } else if (endDate.getTime() - nowDate.getTime() >= 0) {
+            var self = this;
+            setTimeout(function () {
+                self.setTimeShow();
+            }, 1000);
+            timer.text("活动正在进行中");
+            targetItem.text("进行中")
+        } else {
+            timer.text("活动已结束");
+            targetItem.text("结束");
+            return;
+        }
+    }
+</script>
+<div id="J_time1">
+    adfaf
+
+</div>
+<div id="J_aa" style="color:#000">报名</div>
+<script type="text/javascript">
+    var st = new showTime($("#J_time1"), $("#J_aa"), "2014/03/25 15:20:10", "2014/03/25 16:10:59");
+    st.setTimeShow();
+</script>
+<div id="J_time2">
+    adfaf
+
+</div>
+<div id="J_bb" style="color:#000">报名</div>
+<script type="text/javascript">
+    var st = new showTime($("#J_time2"), $("#J_bb"), "2014/03/25 16:09:10", "2014/03/25 16:15:59");
+    st.setTimeShow();
+</script>
+<div id="J_time3">
+    adfaf
+</div>
+<div id="J_cc" style="color:#000">报名</div>
+<script type="text/javascript">
+    var st = new showTime($("#J_time3"), $("#J_cc"), "2014/03/25 15:09:10", "2014/03/25 15:15:59");
+    st.setTimeShow();
+</script>
+</body>
+</html> 
