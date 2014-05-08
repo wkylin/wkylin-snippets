@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Data&Extend</title>
+
+</head>
+<body>
+
+<div id="J_data" data-role="page" data-last-value="43" data-hidden="true" data-options='{"name":"John"}'>south
+    region
+</div>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //$.data()
+        var obj = {};
+        $.data(obj, {name1: 'value1', name2: 'value2'});
+
+        console.log("$.data(obj, 'name1') = " + $.data(obj, 'name1'));
+        console.log("$.data(obj, 'name2') = " + $.data(obj, 'name2'));
+
+        for (var key in obj) {
+            console.log("obj." + key + '.name1 = ' + obj[key].data.name1);
+            console.log("obj." + key + '.name2 = ' + obj[key].data.name2);
+        }
+
+        console.log(obj);
+        console.log($("#J_data").data("role") === "page");
+        console.log($("#J_data").data("lastValue") === 43);
+        console.log($("#J_data").data("hidden") === true);
+        console.log($("#J_data").data("options").name === "John");
+
+        //$.extend
+
+        var item = {name: "olive", age: 23, address: {provice: "河南", city: "郑州"}};
+        var item1 = {sex: "girl", address: {city: "北京"}};
+        var result = $.extend(false, item, item1);
+
+        console.dir(result);
+
+        //将hello方法扩展到之前扩展的Jquery的net命名空间中去
+        $.extend({net: {}});
+        $.extend($.net, {
+            hello: function () {
+                alert('hello');
+            }
+        })
+
+        //$.net.hello();
+
+        $.fn.extend({
+            alert: function () {
+                alert("alert");
+            },
+            confirm: function () {
+                alert("confirm");
+            }
+        });
+
+        //$("#J_data").alert();
+
+        $.extend({
+            modalShow: function (options) {
+                console.log(options);
+            },
+            modelHide: function () {
+                console.log("options");
+            }
+        })
+
+        $.modalShow("aaaa");
+        $.modelHide();
+    });
+
+</script>
+</body>
+</html>
