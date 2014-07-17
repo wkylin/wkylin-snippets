@@ -1,3 +1,12 @@
+掉HTML中Inline-Block元素之间的空白
+----------------------------------------------------------------------------
+解决这个空白问题最好的方案是在这些inline-block元素的父元素上设置font-size: 0
+.inline-block-list { /* ul or ol with this class */
+	font-size: 0;
+}
+.inline-block-list li {
+	font-size: 14px; /* put the font-size back */
+}
 
 使用CSS标注外部链接的巧妙方法
 ----------------------------------------------------------------------------
