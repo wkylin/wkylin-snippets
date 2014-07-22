@@ -1,4 +1,26 @@
 
+固定大小的容器中图片宽高不一致处理办法
+----------------------------------------------------------------------------------------------
+$('img').each(function(i){
+        var _this = this;
+        var _image = new Image();
+        var _height = 0;
+        var _width = 0;
+        _image.src = $(_this).attr('src');
+        _image.onload= function(){
+            _height = _image.height;
+            _width = _image.width;
+            if(_height>250 || _width>250) {
+                $(_this).css({'height':'250px','width':'250px'});
+                _height = 250;
+                _width = 250;
+            }
+        $(_this).css('margin-top',(250-_height)/2+'px');
+        }
+
+    })
+
+
 增强focus定义
 ------------------------------------------------------------------------
 a:focus{
