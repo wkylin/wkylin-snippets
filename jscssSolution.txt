@@ -1,3 +1,17 @@
+JavaScript中匿名函数的递归调用
+-----------------------------------------------------------------------------------
+callee 是 arguments 对象的一个属性，其值是当前正在执行的 function 对象。 它的作用是使得匿名 function 可以被递归调用。
+function fibonacci(num) {
+    return (function(num) {
+        if (typeof num !== "number") return -1;
+        num = parseInt(num);
+        if (num < 1) return -1;
+        if (num == 1 || num == 2) return 1;
+        return arguments.callee(num - 1) + arguments.callee(num - 2);
+    })(num);
+}
+fibonacci(100);
+
 
 固定大小的容器中图片宽高不一致处理办法
 ----------------------------------------------------------------------------------------------
