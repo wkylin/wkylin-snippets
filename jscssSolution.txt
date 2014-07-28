@@ -1,3 +1,27 @@
+去除 inline-block 空隙终极解决方案
+----------------------------------------------------------------------------
+.dib-wrap {
+    font-size:0;/* 所有浏览器 */
+    *word-spacing:-1px;/* IE6、7 */
+}
+.dib-wrap .dib{
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align:top;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+     .dib-wrap{
+            letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+    }
+}
+.dib {
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+}
+
 JavaScript中匿名函数的递归调用
 -----------------------------------------------------------------------------------
 callee 是 arguments 对象的一个属性，其值是当前正在执行的 function 对象。 它的作用是使得匿名 function 可以被递归调用。
