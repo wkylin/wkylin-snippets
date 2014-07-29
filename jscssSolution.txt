@@ -1,3 +1,24 @@
+如何绕过chrome的弹窗拦截机制
+-----------------------------------------------------------------------------
+var btn = $('#btn');
+btn.click(function () {
+
+    //打开一个不被拦截的新窗口
+    var newWindow = window.open();
+
+    $.ajax({
+        url: 'ooxx',
+        success: function (url) {
+
+            //修改新窗口的url
+            newWindow.location.href = url;
+        }
+    })
+});
+
+
+
+
 去除 inline-block 空隙终极解决方案
 ----------------------------------------------------------------------------
 .dib-wrap {
