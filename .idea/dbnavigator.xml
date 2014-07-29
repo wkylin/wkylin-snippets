@@ -29,7 +29,7 @@
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
-      <group-entries value="false" />
+      <group-entries value="true" />
       <execution-inputs />
     </execution-history>
   </component>
