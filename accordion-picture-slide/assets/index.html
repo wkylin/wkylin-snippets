@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        *{margin:0;padding:0;}
+        body {background:url(image/bg.jpg) repeat;}
+        ul{list-style:none;}
+        a{ text-decoration:none;}
+        img{border:none;}
+
+        /*
+        5*40 200+640+5=845  总宽度
+        */
+        #wrap {
+            width:845px;
+            height: 320px;
+            overflow: hidden;
+            margin: 80px auto;
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+        }
+
+        #wrap ul {
+            width: 3000px;
+        }
+        #wrap li {
+            display: block;
+            width: 140px;
+            height: 320px;
+            position: relative;
+            float: left;
+            border-left: 1px solid #aaa;
+            box-shadow: 0 0 25px 10px rgba(0,0,0,0.4);
+            -moz-transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            transition:all 0.5s;
+        }
+        #wrap li img {
+            display: block;
+            width:640px;
+
+        }
+        #wrap ul:hover li { width:40px;}
+        #wrap ul li:hover { width: 640px;}
+        #wrap .title {
+            position: absolute;
+            left: 0; bottom: 0;
+            width: 640px;
+            background: rgba(0,0,0,0.5);
+        }
+        #wrap .title a {
+            display: block;
+            color: #fff;
+            font-size: 16px;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id='wrap'>
+    <ul>
+        <li>
+            <div class='title'>
+                <a href="#">TEXT</a>
+            </div>
+            <a href="#">
+                <img  src='image/1.png'>
+            </a>
+        </li>
+        <li>
+            <div class='title'>
+                <a href="#">TEXT</a>
+            </div>
+            <a href="#">
+                <img  src='image/2.png'>
+            </a>
+        </li>
+        <li>
+            <div class='title'>
+                <a href="#">TEXT</a>
+            </div>
+            <a href="#">
+                <img  src='image/3.png'>
+            </a>
+        </li>
+        <li>
+            <div class='title'>
+                <a href="#">TEXT</a>
+            </div>
+            <a href="#">
+                <img  src='image/4.png'>
+            </a>
+        </li>
+        <li>
+            <div class='title'>
+                <a href="#">TEXT</a>
+            </div>
+            <a href="#">
+                <img   src='image/5.png'>
+            </a>
+        </li>
+        <li>
+            <div class='title'>
+                <a href="#">TEXT</a>
+            </div>
+            <a href="#">
+                <img src="image/6.png">
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
