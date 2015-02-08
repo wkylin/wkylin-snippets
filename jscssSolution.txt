@@ -1,4 +1,74 @@
-﻿
+﻿很有用的JQuery代码片段
+http://www.codetc.com/article-23-1.html
+
+平滑滚动到页面某个锚点
+------------------------------------------------------------------
+$(document).ready(function() {
+    $("a.topLink").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500,
+            easing: "swing"
+        });
+        return false;
+    });
+});
+
+
+解决chrome input 黄色背景色的问题
+-------------------------------------------------------------------
+1. 在form标签上直接关闭了表单的自动填充功能：autocomplete=”off”
+
+2.不需要关闭autocomplete的情况下通过js完美解决.
+
+<script>
+ 
+  if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
+
+  $(window).load(function(){
+    $('input:-webkit-autofill').each(function(){
+      var text = $(this).val();
+      var name = $(this).attr('name');
+      $(this).after(this.outerHTML).remove();
+      $('input[name=' + name + ']').val(text);
+    });
+  });
+}
+</script>
+
+
+css设置最小高度 然后自适应
+=====================================================
+min-height:400px; height:auto!important; height:400px;
+
+
+重置input和textarea的默认样式：
+============================================================
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+
+
+location.Reload()
+============================================================
+window.location.Reload()应该是刷新.(如果有数据提交的话，会提示是否提交的(是和否选项))
+window.location.href=window.location.href;是定向url提交数据
+
+
+强制显示滚动条
+=============================================================
+解法一：
+body, html { 
+ min-height:101%;
+ }
+ 
+解法二：
+CSS强制让FF浏览器显示滚动条
+html {overflow:-moz-scrollbars-vertical;}
+html {min-height:101%;}
+
+
+
 IE7 Li下空白问题
 =============================================================
   vertical-align: bottom;
