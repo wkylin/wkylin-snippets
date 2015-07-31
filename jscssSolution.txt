@@ -1,4 +1,21 @@
-﻿很有用的JQuery代码片段
+﻿
+input:text
+==========================================
+-webkit-text-security: disc;
+<body scroll="no">
+-webkit-transform: translate3d(0,0,0)
+-webkit-tap-highlight-color:rgba(0,0,0,0); 
+document.documentElement.style.height = window.innerHeight + 'px'; 
+
+文件上传插件：
+------------------------------------------------------------------
+http://www.plupload.com
+http://www.cnblogs.com/2050/p/3913184.html
+http://chaping.github.io/plupload/demo/
+http://fex.baidu.com/webuploader/
+
+
+很有用的JQuery代码片段
 http://www.codetc.com/article-23-1.html
 
 平滑滚动到页面某个锚点
